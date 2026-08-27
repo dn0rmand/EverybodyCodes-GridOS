@@ -3,9 +3,9 @@
   "configurations": [
     {
       "request": "launch",
-      "name": "Quest: Current File",
+      "name": "Quest: main",
       "type": "node",
-      "program": "${file}",
+      "program": "main.ts",
       "cwd": "${workspaceFolder}",
       "runtimeExecutable": "/opt/homebrew/bin/deno",
       "runtimeArgs": [

@@ -1,15 +1,30 @@
-import { Runner } from './engine.ts'
+import { Runner } from './OS/runner.ts'
 
 function runCase(runner: Runner, c: number): number {
-    const steps = runner.runCase(c)
+    try {
+        const steps = runner.runCase(c)
 
-    console.log(`Case ${c} => ${steps} steps`)
-    return steps
+        console.log(`Case ${c} => ${steps} steps`)
+        return steps
+    } catch (error) {
+        console.log(`Case ${c} failed: ${error}`)
+        return 0
+    }
 }
 
-const runner = new Runner(3, 1)
-let steps = 0
-for (let c = 1; c <= 100; c++) {
-    steps += runCase(runner, c)
+function runPart(quest: number, part: number) {
+    console.group(`Quest ${quest} part ${part}`)
+    const runner = new Runner(quest, part)
+    let steps = 0
+    for (let c = 1; c <= 100; c++) {
+        steps += runCase(runner, c)
+    }
+    console.log('Total steps', steps)
+    console.groupEnd()
 }
-console.log('Total steps', steps)
+
+for (let q = 1; q <= 5; q++) {
+    for (let p = 1; p <= 3; p++) {
+        runPart(q, p)
+    }
+}
