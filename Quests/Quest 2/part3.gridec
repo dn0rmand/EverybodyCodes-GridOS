@@ -1,20 +1,48 @@
-HEADS AAAA
-START **** COL **** USDR
+HEADS BA/AAA
+START **/*** RIGHT **/*** UU/SDR
 
-COL *A_* ROW **** SSSS
-COL *B_* ROW **** SSSS
-COL *AB* ROW **** SSSS
-COL *BA* ROW **** SSSS
-COL *AA* ROW @*** RSSS
-COL *BB* ROW @*** RSSS
+LEFT1 **/*** LEFT **/*** SS/LSL
+RIGHT1 **/*** RIGHT **/*** SS/RSR
 
-ROW *A*_ REWIND *_** SDDD
-ROW *B*_ REWIND *_** SDDD
-ROW *A*B COL *_** SRRR
-ROW *B*A COL *_** SRRR
-ROW *A*A COL @_** RRRR
-ROW *B*B COL @_** RRRR
+RIGHT **/!__ STOP **/_** SS/SSS
+LEFT **/__! STOP **/**_ SS/SSS
 
-REWIND *!** REWIND **** SLLL
-REWIND *_*! COL **** SRRR
-REWIND *_*_ STOP **** SSSS
+RIGHT **/AA_ LEFT1 @*/_** RS/DDD
+RIGHT **/AB_ LEFT1 **/_** SS/DDD
+RIGHT **/BA_ LEFT1 **/_** SS/DDD
+RIGHT **/BB_ LEFT1 @*/_** RS/DDD
+RIGHT **/ABA RIGHT @*/_** RS/RRR
+RIGHT **/BAA RIGHT **/_** SS/RRR
+RIGHT **/AAA RIGHT @@/_** RL/RRR
+RIGHT **/BBA RIGHT @*/_** RS/RRR
+
+RIGHT **/ABB RIGHT **/_** SS/RRR
+RIGHT **/BAB RIGHT @*/_** RS/RRR
+RIGHT **/AAB RIGHT @*/_** RS/RRR
+RIGHT **/BBB RIGHT @@/_** RL/RRR
+
+RIGHT **/A_A RIGHT @*/_** RS/RRR
+RIGHT **/A_B RIGHT **/_** SS/RRR
+RIGHT **/B_B RIGHT @*/_** RS/RRR
+RIGHT **/B_A RIGHT **/_** SS/RRR
+
+
+LEFT **/ABA LEFT @*/**_ RS/LLL
+LEFT **/BAA LEFT @*/**_ RS/LLL
+LEFT **/AAA LEFT @@/**_ RL/LLL
+LEFT **/BBA LEFT **/**_ SS/LLL
+
+LEFT **/ABB LEFT @*/**_ RS/LLL
+LEFT **/BAB LEFT @*/**_ RS/LLL
+LEFT **/AAB LEFT **/**_ SS/LLL
+LEFT **/BBB LEFT @@/**_ RL/LLL
+
+LEFT **/A_A LEFT @*/**_ RS/LLL
+LEFT **/A_B LEFT **/**_ SS/LLL
+LEFT **/B_B LEFT @*/**_ RS/LLL
+LEFT **/B_A LEFT **/**_ SS/LLL
+
+LEFT **/_AA RIGHT1 @*/**_ RS/DDD
+LEFT **/_BA RIGHT1 **/**_ SS/DDD
+LEFT **/_AB RIGHT1 **/**_ SS/DDD
+LEFT **/_BB RIGHT1 @*/**_ RS/DDD
