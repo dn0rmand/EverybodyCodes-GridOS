@@ -1,0 +1,20 @@
+HEADS AAAA
+START **** COL **** USDR
+
+COL *A_* ROW **** SSSS
+COL *B_* ROW **** SSSS
+COL *AB* ROW **** SSSS
+COL *BA* ROW **** SSSS
+COL *AA* ROW @*** RSSS
+COL *BB* ROW @*** RSSS
+
+ROW *A*_ REWIND *_** SDDD
+ROW *B*_ REWIND *_** SDDD
+ROW *A*B COL *_** SRRR
+ROW *B*A COL *_** SRRR
+ROW *A*A COL @_** RRRR
+ROW *B*B COL @_** RRRR
+
+REWIND *!** REWIND **** SLLL
+REWIND *_*! COL **** SRRR
+REWIND *_*_ STOP **** SSSS

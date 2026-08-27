@@ -1,0 +1,4535 @@
+{
+  "1": {
+    "limits": {
+      "heads": 10,
+      "states": 1000,
+      "rules": 10000,
+      "steps": 1000000,
+      "bytes": 1000000
+    },
+    "cases": [
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 4,
+            "y": 0
+          }
+        },
+        "data": "ABBAC",
+        "validate": "TEXT",
+        "expected": "PPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 4,
+            "y": 0
+          }
+        },
+        "data": "CABAC",
+        "validate": "TEXT",
+        "expected": "PPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "data": "A",
+        "validate": "TEXT",
+        "expected": ""
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "data": "B",
+        "validate": "TEXT",
+        "expected": "P"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "data": "C",
+        "validate": "TEXT",
+        "expected": "PPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 5,
+            "y": 0
+          }
+        },
+        "data": "ABBCCC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 6,
+            "y": 0
+          }
+        },
+        "data": "BBCBCCC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 7,
+            "y": 0
+          }
+        },
+        "data": "BABBBBCA",
+        "validate": "TEXT",
+        "expected": "PPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 8,
+            "y": 0
+          }
+        },
+        "data": "CCBCBCBBC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 9,
+            "y": 0
+          }
+        },
+        "data": "CAACBCBBBB",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 10,
+            "y": 0
+          }
+        },
+        "data": "CCCCCBCCCAC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 11,
+            "y": 0
+          }
+        },
+        "data": "ACBCCBCCBABC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 12,
+            "y": 0
+          }
+        },
+        "data": "BCBCBCCCCBCCB",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 13,
+            "y": 0
+          }
+        },
+        "data": "BBCBCBBCCCBCCC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 14,
+            "y": 0
+          }
+        },
+        "data": "CCBCCBAACCCBBBC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 15,
+            "y": 0
+          }
+        },
+        "data": "CCBBCCCACBACCCBC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 16,
+            "y": 0
+          }
+        },
+        "data": "CACBAACBCACBCCCBB",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 17,
+            "y": 0
+          }
+        },
+        "data": "ABCCBBBCAACCBCBBBB",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 18,
+            "y": 0
+          }
+        },
+        "data": "BCCBACBBBCCABBCBCAA",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 19,
+            "y": 0
+          }
+        },
+        "data": "BBCCCBCCCCBABCCCBCBA",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 20,
+            "y": 0
+          }
+        },
+        "data": "CCCCAAABCCBBABCCBCCBA",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 21,
+            "y": 0
+          }
+        },
+        "data": "CBCBCBACCBBCCAACBABCBC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 22,
+            "y": 0
+          }
+        },
+        "data": "CBACCCACBABBCCCACACBCCC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 23,
+            "y": 0
+          }
+        },
+        "data": "ACCBAACCCCCBBABBBBAABBAA",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 24,
+            "y": 0
+          }
+        },
+        "data": "BBCCBCBCACACBBBACBCBCCBBB",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 25,
+            "y": 0
+          }
+        },
+        "data": "BCAABABACBCCCBBCBCCACCCBBC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 26,
+            "y": 0
+          }
+        },
+        "data": "CBCCACBCBBBACCBBCBAABAABCBB",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CCBBCBCBCACCCBCCCACBACACCBCC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CACBCCCBCBCCCCCCCBCABCCAABBC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "ABBCCCCCBCAAACCCBBCBCABCCBAC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BBBCBACCBBCCCACCCCBCCBBCCCCC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BBAACBAAABBCAACCCBBCBCAABCCB",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CBBBCBABAABCCCBBCCBABABCCACC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CBCAAABCCCBBBBCCCACCBBBBCCAC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CBBBBBCBABCABBABCCBCCBCCBBBC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "ABBBCCCCCAABBCBCACCCBABAACBB",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BACACBCCCCCBCCCABCCACBCCCCCC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BCCABCCCBCBBABACCCCCBCACCABC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CBBBCCBCACBABCCCAACCBCCCBACC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CCCCCCBCCACBCBBABABCCBBACCAC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CCBBBCCBCCBBCCBABCACCABCBCBC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "ABCCCACAACCCCCCCCACACBCBBCBC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BCCACBABCABBBBBCBCBBBCABCCBC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BCCCCCCBACBACBCABCBBBBCCCCCB",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CBBBBBAACBCACBBBABACCCCCACBA",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CCCBCCCBBBCCCACCACCABCCABCBC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CBCCCCBCBCCCCCBCBBCCCCCBCACC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "AAAAACBAABBCCACCACBCCCCCBACC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BBCBBCCCCCCACCBCBABCCCBCCBCB",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BACCBCCBABACBBCCCCBCCBBCCCBC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CCCCBBCACCBCBBCACBCBBCCABCCC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CCCCABCCBBBAABCAACBACACCBBCC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CBCCACCCBBACACABBCCBBCABCBBC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "ABBBCCCCCCBBABCBCCCBCBCBBABC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BCBBACCABBCCCCBCCCCBABBCCCAC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BBACCBCCCCBCCACCCCCACBBCCBBA",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CABABABBCABBCCBCCCCCCCBBBACB",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CCBACABCBCCCCCCCCABCBCBBCBCA",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CCBCCBBCAACBCBCBBAACBBCCACCC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "ACACCAACCCBCCCBCCCABBBCCCBBA",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BACAACACCBBBCACCACBCCABCCCCC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BCCCBBBBCBCBCCABCBCCCBBCCCCB",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CBCCCBBCBCCBCAABBAABCBCCCCAA",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CCBBCBCBCBCBCCABBABCABAACCBA",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CACBCCCCBBBCCCBAABABCCCCCCAA",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "ABACBBCCBBCACBBCCCAAACCCCBBC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BCBBCCCCBCCCCCCCABABBBACABBA",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BCAABCACBBCCCBCCBBABBBCCCABB",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CCCCBBACCCACBBCAAACBACAACBAB",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CCCCCCACABCCCCBCCBCBACCCCCCC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CCACCBACCCCBCCCBCCCCCCCCCBCB",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "ACCCBCCBCCCCCCCBBCACCCBBBABB",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BCACABCCBBCCCCCCBABCABCCBCBA",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BCCAACACAACCCCBABBCCBCBCBBBC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CACCAACCCACCBBABCBCCACBCACBB",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CCBCBAACCCACACCABACCCCCACACC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CBABCBACCCCBCBBCCBBBCCCCBCBC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "AACBCCBCBCCBBBBBABCBBCCCCABC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BBABBACCCBCCBBCABCCBABBCBCCC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BABABBCBACCCABBCCCCBCCBCBACB",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CCBBBCBBBBCCCCBCCBCACACAAAAA",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CACACACCBACBBCCBBBCBCCCCCACA",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CBACCCCCCCCBCCCCCCCCCCBCABBC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "ABCBAACBACBBABCABCBCBACCBBCC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BCAAAACCCCACBCCCCCACBACBCBAB",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BBBBACBABCCBABCBCCABBBCCABCC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CCBBBBBCCBBCACBCBCBCCBCCBCBB",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CCBBCBABCBCAACACACCCCBBBCCAC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CBCCACCBCCBCCCCCBCABACCBCBCC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "ACACCBAACBCBBCBABCBACCACCCCC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BCBBBBCACCCABBCCCCABCCCCCBCA",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BAACBCCACCACBBABBCBCCCACBCCC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CBCCCACBCCCBCCBCCCBCCCCCCBBA",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CCBBBCCCBCCCACCABBAABBCACCAC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CAACCCBCABBACCACABCCCBCABACB",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "ACCCCCACBCCABBCCBBBCBBABCCBB",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BBBCCACBBBBACCBCCCCCCABAACCA",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "AAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "validate": "TEXT",
+        "expected": ""
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      }
+    ]
+  },
+  "2": {
+    "limits": {
+      "heads": 10,
+      "states": 1000,
+      "rules": 10000,
+      "steps": 1000000,
+      "bytes": 1000000
+    },
+    "cases": [
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 5,
+            "y": 0
+          }
+        },
+        "data": "ABDBAC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "data": "A",
+        "validate": "TEXT",
+        "expected": ""
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "data": "B",
+        "validate": "TEXT",
+        "expected": "P"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "data": "C",
+        "validate": "TEXT",
+        "expected": "PPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "data": "D",
+        "validate": "TEXT",
+        "expected": "PPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 5,
+            "y": 0
+          }
+        },
+        "data": "DABADC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 6,
+            "y": 0
+          }
+        },
+        "data": "DDCDDDC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 7,
+            "y": 0
+          }
+        },
+        "data": "DDBCDBDD",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 8,
+            "y": 0
+          }
+        },
+        "data": "DDCCDBBAB",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 9,
+            "y": 0
+          }
+        },
+        "data": "ADBDADBAAA",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 10,
+            "y": 0
+          }
+        },
+        "data": "BDBDDADBDCB",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 11,
+            "y": 0
+          }
+        },
+        "data": "BDBDCDCCDCDD",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 12,
+            "y": 0
+          }
+        },
+        "data": "CBDBDCDACADAC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 13,
+            "y": 0
+          }
+        },
+        "data": "CDCCCBCBDBDDCC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 14,
+            "y": 0
+          }
+        },
+        "data": "CDBDCBCCBDCCCCB",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 15,
+            "y": 0
+          }
+        },
+        "data": "DCBCCDDBCDDDCDCD",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 16,
+            "y": 0
+          }
+        },
+        "data": "DDCBBDBCADBDDDABC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 17,
+            "y": 0
+          }
+        },
+        "data": "DBDDBBCCCCCACBBCBB",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 18,
+            "y": 0
+          }
+        },
+        "data": "DDBCDAABDDDCBDCDCCD",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 19,
+            "y": 0
+          }
+        },
+        "data": "AABDAADCBDDABDBCCDDD",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 20,
+            "y": 0
+          }
+        },
+        "data": "BDABDCCCBDABDCCADBCBD",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 21,
+            "y": 0
+          }
+        },
+        "data": "BBDADDBCDCCAADBBACCBCD",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 22,
+            "y": 0
+          }
+        },
+        "data": "CDCDDDCDCCDACDDBDCDDDDC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 23,
+            "y": 0
+          }
+        },
+        "data": "CDDADCBCDCDDDCDDCDCCCBDB",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 24,
+            "y": 0
+          }
+        },
+        "data": "CCDCBDCDCADBDCDBCBCABDDBD",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 25,
+            "y": 0
+          }
+        },
+        "data": "DCDCCCCDACDDDBBDDCCDDDCADC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 26,
+            "y": 0
+          }
+        },
+        "data": "DDCCCBACDCACDDADCCDBBCCBBDB",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "DCCDBCDCCCDDCDAACDBCBBDDDBDC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "DCDDCDDDADCDDDCDBAADBDBCDBDB",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "ABADBDBCCCDBDCBBBDDDBAABCCDD",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BDCADADBCDCBCBBDCDABDDBCCCDC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BDDBBDDCCBCCADDDADABCBCBBBCD",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CBCDADCDCDCBDCABCADDABBBCCCB",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CCACDDACBDDADDBDBDDBCDCDBDDD",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CADCDDCDCCCCDBDDCDCDCDDCCDCB",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "DCDDBBADCCACBABDACDCDBCDDCCD",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "DCDCDADADCACDBDADCBDBDCDCCBC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "DBDCACDDBBCBDCDCBBCBCDCBBDCD",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "DCDCCDDCDACDBDACABDABBDCDDDC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "ACDBDCCACCCDABDDCBACCDCACBBC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BCBADADDCDCDDCCBDCCDDAABDCDB",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BCBDDDDCDADCDCCCCCBACDDCBDCD",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CCDDBCDCDBCDCDBCBDCDCDCADDBA",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CBADDBBCCAADBCCADDBCCCDDCCCD",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CDBDBDCADCBADBDADDCDBDCCDCAC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "DDDCCCDCDCCCBCCACBBBBDBDBCCC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "DDCDBCCABADDCDDDCDDBDDDBDBBD",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "DCCBDCCDDDBDBCDCCCADADDBCCBB",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "DBDDBDDACDDBCABCBDBDDCDCBDDD",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "ADCCAADCADDBBBDCDCBCCABDCCDA",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BBDCDBCCDDBBBCACDCCADCBCBDDB",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BBBCCADDCDCDCDDCCCCACBCADDBD",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CDADBDCDDACBCBDDCBDCCCDDADDD",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CDDDBABCCDCDDBCCCCDCCBDCDCAD",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CCDCCCCBBDDCDDBAACACCDCDDBDD",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "DBDDDBDDDCCACCBBDDDCDACDDDAD",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "DCCDCCADCDDBDBDCCDDDCCBCCDDD",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "DBCBDCDBDDBACDBBCCDADDDBCDCD",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "DABDDCDCDADACDDBDDDCCDDDCCCB",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "ACDDACBDACDBCADCBBCCCDCDCDBA",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BBDCCBCCDDDCCDCADABCCABCCCDD",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BDCDBCDBDDBDADDDCCDDBBCACDDC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CCDCDDDDDDDBADBDBBCDCDDACCBD",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CCBCDABDCBCDDDCDDCDCBACBCDDA",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CDCBBDBDCDBAADDDBDCCDDBDCDBB",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "DBCBCCCDCDDBADCBDBADDBDADADD",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "DDDDBCABCDCBBCDABCDBDDCCADBC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "DBABCBCBCDDDBCADCABDBCDDBABC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "DDBBDCBBCDBCBDBDCCDCCDADABCC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "ACCADDDCDCDBDDBDDDDDCBDBDBDB",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BDDACDCADBCCDDBCCDCBCADCDBBD",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BDBDDBDDCBDBCCBDBDABCBDADDAC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CDBBDBBDCCCBDCBADDBBCBDDDACD",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CCDCCBBDCBCDDDDDDBBDBCBCCBAD",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CBBDCCCCCCDDDCBCBDABBCDCCCBD",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "DDBDDCDCADDCCBDCDCACABCDCCCC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "DDDABBACDCDDCDBDDDBACCBDAABC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "DACDBABCCABDBBCDDBDDDDBDDCCC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "DCCCDDDCBBDBCBCBDABDBCBCCCCB",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "ADBDADDCDDCBAADDDBDCBDBDDCCD",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BDBBCBDCDDBCDDCDBADDADBDCADD",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BDAADBCCBCCDABCCACDBDDCBDCAA",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CBBDADADDDDDBDBACBDBBCDDDCDC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CCDBDCDDCDCCCDBBBCACBCDDCCDA",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CBCDCCDDDBBCCADDACBCDCBDCDDC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "DCCCCCDDDDACDDCDACCCDAACDDBC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "DDDBCCBAAADBDAACCCCCACDCCDCA",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "DBBCBCDCCDDDDCCCDCCDDBDCBDCA",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "DDBAADCCDBDDCDDCDBCBDDCDDADC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "ABBDDCBBACABDDCBBACDDCBDCCCD",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BDCBDACCDDDDDDDBBDBBDBADBCCB",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BBBBDBACDDCADCCDDCDACCCCDCDD",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CDCACDCDDDDCDCCBDCACDDDBBBCA",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CDDDCDABCCCDDDACDADBDBBDDACB",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CAAAABCDDCCBCDDDDBCDCDBADCDB",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "DCCBDDBBBDADACDCBDDCDCDDCDDC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "AAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "validate": "TEXT",
+        "expected": ""
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "DDDDDDDDDDDDDDDDDDDDDDDDDDDD",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      }
+    ]
+  },
+  "3": {
+    "limits": {
+      "heads": 10,
+      "states": 1000,
+      "rules": 10000,
+      "steps": 1000000,
+      "bytes": 1000000
+    },
+    "cases": [
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 4,
+            "y": 0
+          }
+        },
+        "data": "AABCD\nA__AC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "data": "A",
+        "validate": "TEXT",
+        "expected": ""
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "data": "B",
+        "validate": "TEXT",
+        "expected": "P"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "data": "C",
+        "validate": "TEXT",
+        "expected": "PPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "data": "D",
+        "validate": "TEXT",
+        "expected": "PPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "data": "A\nA",
+        "validate": "TEXT",
+        "expected": "PP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "data": "B\nB",
+        "validate": "TEXT",
+        "expected": "PPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "data": "C\nC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "data": "D\nD",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 19,
+            "y": 0
+          }
+        },
+        "data": "AAAAABBBBBCCCCCDDDDD\nABCD_ABCD_ABCD_ABCD_",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 10,
+            "y": 0
+          }
+        },
+        "data": "BBADADDBDDA\n_BD_DC__DDA",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 11,
+            "y": 0
+          }
+        },
+        "data": "BADBABDADDCD\nCACDDCD_DBC_",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 12,
+            "y": 0
+          }
+        },
+        "data": "CBCDDBACACCBB\nD_A_D_D______",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 13,
+            "y": 0
+          }
+        },
+        "data": "CDADADDBBDDBCD\nBDDD__BBDDDCCD",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 14,
+            "y": 0
+          }
+        },
+        "data": "CCDCDCCCCDDADBC\n_DCB__DBDC_CBC_",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 15,
+            "y": 0
+          }
+        },
+        "data": "DACCACDCDDCBBDDD\n_CC_C_CA_BBD_DDC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 16,
+            "y": 0
+          }
+        },
+        "data": "DDDBACCCCABDDCCAB\nACBCCDCDDD_CDACDD",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 17,
+            "y": 0
+          }
+        },
+        "data": "DCACACBBDBADADBDDD\n___BD_B__CCDBDCCC_",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 18,
+            "y": 0
+          }
+        },
+        "data": "DDBDBDCBDADADDDCDAC\nDDBDA_B___DDD_ADC_C",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 19,
+            "y": 0
+          }
+        },
+        "data": "ACCDDCBDBDCCCCBDCBBB\nBC_D__C_D__DCD_DBC_A",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 20,
+            "y": 0
+          }
+        },
+        "data": "BBDBBCCDABCCCDDCCCCCC\nD_DBD_CADCDB_D__CCCC_",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 21,
+            "y": 0
+          }
+        },
+        "data": "BDCCBCCCDDDDCDDCADDDCC\nA_A_D_CCD__ADDDCD_CC_C",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 22,
+            "y": 0
+          }
+        },
+        "data": "CCBCDBCCDDDDDDDCCDAACCC\nBBABD__DDDCD_BBBD__DD__",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 23,
+            "y": 0
+          }
+        },
+        "data": "CCDBCDBBACDCBCCBCDCBCDBD\nADDDB_C_C_C_D_D_BCC___D_",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 24,
+            "y": 0
+          }
+        },
+        "data": "CAACDCBDCDABDDDBDBDCCDBCD\nDCC_A_CCDCC_DDDDADB_ADCD_",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 25,
+            "y": 0
+          }
+        },
+        "data": "DBCACBDCBBCDDCDDDCDCCBDBCC\n_D__DD_DD_____DDA_CCB__CBD",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 26,
+            "y": 0
+          }
+        },
+        "data": "DBDDBCCDCAADDDBBCDDBDDDDCBB\n_DDDBCD_DB__DAAC__BDBCAC_AB",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "DDCCABBDDCBDCDBCDCDCBBCDCBDC\nCDBDD_CD_A_CDC_DD_CB_A_DCCDD",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "DDCDDDBCCDCCCDBBDDCCCBCCCCAC\nDDCD_BC_ADDBC_D_C__DCAB_DC__",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "ACDBCDBDACCDCDABCDBCDCBDDDDA\nD__CCB_AB__BD__DDAC_BD_CCDB_",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BDCADBBDCDCCBDBDDDCDCDCCDCDC\n_C__BDDDD__DC_C_DD__BCCCDD__",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BACDCCDDCDDBCBABBADDDBDDDBCB\n__BC__DDDC_B_CCDDCDDBC__BAD_",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CCDDDBABCCCADCDCCDDDCBCDDDCD\nDB_DBC_A_B_DBDCCDD__BCCDDB__",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CBCCABCDCDDDADCDDCCDDBADBDCD\nCDB___DDD____DD__C_DBBD_ADCD",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CCDBADDABBDCCDDACDBCDDCBDCCB\n_DD_CDD_C_CCCDCABDDDCDB_D_B_",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "DDCDDCDCCADBBCDABDCCBDCCDCDD\nDBCD_DACBD_B_DD_DCB_BDDBBC_D",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "DCCCDDCDCACBDDBDCBAABDDCADCD\nDB_CD__DCDDCC_CDDC_C_C_D_B__",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "DBADCDCDCCDCBCDDDBBDAADDAADB\nD_CBCD__BA_D__BBCCDD_BC_DDCD",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "DBBABDDACCDCDDBCDBDCCCBCADDD\n___CCCCCBCCBC_DBA__DBC__D_A_",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "ACBBBACCDAACACBCDDDDDCDDDDBD\nDADBDBAA__AD_D_BBC__DDD___DA",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BBDCBDADDCDDDCCDCCCCCDDBDDCD\nDB_D_AB_ACD_DC__BABCCDAD_AD_",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BCBBCDCCCDCDDCCCDDCCDADCBBCC\n__D___DBD_ACCDD_AB__DDDCB___",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CDDBCBCDDADCDCDDBACDBAADCCCC\nCD_B_D_C__BDDBD_BC_DBD__DAC_",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CBADBBCBDADDCACDDDDBBBDDCCBB\nBD___CBBBCCD_DDA_DC_BDAD_DB_",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CDBADDDCBDDCCCDBDABCCBCBDBDD\nDDD___C_CB___D_B_____BB_DA__",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "DCABDCBADCDADBABABBCCDDADDDC\nA_DA_B___CDDBBDDCBAB_DD__D_D",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "DCCCDDDDDBACCACACCADCDCDBACA\nCDD_CC__AD_D___C_BAD___D__AB",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "DBACDADCDADCCCCDBBDACCDBBDCD\n_D_AC_D_D__BBCBAACDDCD_DB_DD",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "DABCABDDDDDADDCBDDDACBCDCDCC\nA_DDB_B__DACBD_BD__BDBCBDCBD",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "ADCCDCBDDDCDDCCCDCDCCDBCDCDB\n_D_BCB_DD_B__DD_CD______CCAD",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BDDCDCDBBCDDDCCDCBDDACBCACDB\n_DBBBDD__BCC__BC_C_DD_DCDC__",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BCBBCDDCDDCDBDACDBCBDDBCDCDB\nCC_____D__CCCCDBC_BDBBBD__CD",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CBABADDDDCBBDCDABDDDCCDADDBC\n_AD_CBAACDBDBB_D___DDA_CC_DD",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CDDCCCDCABBDCCDDDCCCCBCDBCDA\nB__A_CC____C_DC__DBDBAC__BDD",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CCDCBCBADBCCDBCDCDDADCCDCCCD\n_DD_A_DCD_BDCDD_B_A_CD__C__B",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "DBDADDBBCDCAABDDBCBABDDDDDCA\nC__DBD_CCB_DC___CBD_DCA__DDD",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "DDDCDDCADDACBDACCCDDDBCDDBCC\n__D__DDD__DBACD_D_BCCBCBB_CD",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "DBCDDDCADCCAADCDBDBDCABCCCBC\nD_A_D_DCB_ADDDB__CCACBBD__CB",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "DBADACDADDBDBDDCDAABBBDDDDCB\nC_DD__BC_C_A_DCDC__B__DAAC__",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "ADCBACDADBBCDCCCCBCBCDDBCBCD\nCDCCCCBC_BB_CCA_DDCACCDC__DB",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BDCDBCCDBBDBDACCCCDBDDADCBAB\n_CDBC_C_CDBADDDC_D__DDD_C_CD",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BCBDCABDBBDDCDADBBDDCCCCCDDC\n__A_ACCC_DDD__DAB_DDCB___D_C",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CDCCDACCCCCDDDAACCBCCCCCCCCB\n_DBADBDCD__CBBC_BBC_D___CADD",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CBDCDDCCDBCCCDBCDCACACDCCDCB\nC__ACB_DBCCCDD_D__CCD_CDDD_D",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CCDBBBBBABDCDBCBBDBBDBAACCDD\nC_AAC__DCCADDDD_CD__DCCAB__C",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "DCAADDDCDDCDDDCBCCADCCDBADAD\n_ADABDDBB__C___CCB_D_AD_D_DC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "DCDCCDCDCDBBDBCBDCDBCDBCDDDB\nDDA__ACDADA____BD_DC__DCB__C",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "DCDDCCDDDDCDDDBDBABDDBDDABAC\nDDC_DABDBD_DB_CBC_C__BBA_DAA",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "DCDDBBDDDCCADCDDACBDBCCDABCB\nC______DCCDDBDBDDDBDC_B_____",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "ADCCCDBDCDBCCDDCDCCDDBDDDDBD\nDDCDD__C__DB_BCDCBBA__DBAD_D",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BDDBDDCACDDDCCDDDAABBDDBABBA\nCC_D___BA_D_DDCC_____D_ACA_D",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BCDCBDADDCCDCCBDDBCBBCCACCCD\nDDBD__C__CBDDD_D_CB_DD__B_DC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CBBCBADDCDCBDDDBCCDCDBDCDBDB\nB_D_C_BCBDDDDDDACB_C_D__DCD_",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CDCDBCCCDDDDABDCBDCDCDACCDDB\nBDDD____DD__DC_DC_CDD_D_DB_C",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CDDCDBDDCCBCDCDDBBCDDDDACABC\nBADD____ADCCD_D_D__DC__D_BDD",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "DDACDCCCDCCCCCDCBABDDCAADCCC\n__C_AB___BCD_CDD_D_CA__CB_CB",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "DDABDADDCDCCCDDDDCDADCDDCBDB\nD_BC______DB_CC___C__BD___CD",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "DDDDCCDCDDDBDDCDCCCBDACBDCBD\nB_AC__BCC_____DCC_DDDDADDD_C",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "DDDBDCBBDCDDABBDBDDCBADDBCCD\n_CDDBDCAADBC_C__DB_BDCDD__B_",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "ABBCCDDADDDCDDDCBCCDBCCCCCCB\nDDDAAD_D_D_BACB_AC_DD_BC__C_",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BDDCDACBBDDDDCAADDBCDDDABABD\nDD___C__BBD__DDCDDCCDD_DBDD_",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BCCCCCDBADCCCACCDDAADCBCCBDC\nD______BC_CCBB_D_B__AC__D___",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CBADCACABCDADDBABDADDCCDCCDC\n_DDD__DCD__CDCDCBDB_CDDBD__D",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CCDDDBADCDDDADDCBDADBDDBDADC\n_CD_DCDDD_DD_D_D_ADD__CD__BC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CDADDCCCDCBBADDACCDCDDBCDDCC\nDCDD__CDDCCDDDB_D_BBC_DD__D_",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "DCCBDDBDCACDBBDDDDBBDDDACDDD\n_B_D_AD_C_DC_DCCDAC_DCB_BCBB",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "DCCDBDCBBDCCDDDBABCCDBBABBCD\nCC___DBD_ACBDDBD___C__CCDCBD",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "DDDBBCDBDDBCCCCCDCCDBCDDDCCC\nD___DDCDBDB_D_ACCCC_DCDB_DDD",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "DDCBBADBBDDDBCCDDADDBBCDADCC\nCDDD_C_D___DACDBBC_B__DD_DCA",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "ACADBDBDBDDBCCACDDCCCBCCCCDC\n____DCDDB_DCD_B_DADCD_C__B_B",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BDCBCDCDBCBDCCDCBCCDBDADBBAB\n_CB_DCD_DDDC_B_CB___ADB___BC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BCCDCDDCDDDBDDDCCCBBBAACDDBC\nBDBCDD_D_BDD__A_DACA_D_CC__D",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CDBDDDADBCBCACCCDBCCCBBDDDDC\nDBD__CD_CD_DD__D_DCD_B_DDDCC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CCDBDDCBDDCDCDDCDDBBDABACCDC\nDDD__DD____D_D__A_CDDBB___DD",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CBDDBDDCDDCCCAADADACCDCCDDCC\nDDD_CD____DC_CDABD_A___B_CC_",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "DDBDDDBABDCBCCDBDDBDCDDCDACA\n_D_DDDC_CDD_DB__CC_DDDCAACD_",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "AAAAAAAAAAAAAAAAAAAAAAAAAAAA\nAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BBBBBBBBBBBBBBBBBBBBBBBBBBBB\nBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "CCCCCCCCCCCCCCCCCCCCCCCCCCCC\nCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "DDDDDDDDDDDDDDDDDDDDDDDDDDDD\nDDDDDDDDDDDDDDDDDDDDDDDDDDDD",
+        "validate": "TEXT",
+        "expected": "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+      }
+    ]
+  }
+}

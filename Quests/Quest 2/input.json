@@ -1,0 +1,6135 @@
+{
+  "1": {
+    "limits": {
+      "heads": 10,
+      "states": 1000,
+      "rules": 10000,
+      "steps": 1000000,
+      "bytes": 1000000
+    },
+    "cases": [
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 5,
+            "y": 0
+          }
+        },
+        "data": "ABBAAB",
+        "validate": "TEXT",
+        "expected": "@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 5,
+            "y": 0
+          }
+        },
+        "data": "AAABBB",
+        "validate": "TEXT",
+        "expected": "@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 5,
+            "y": 0
+          }
+        },
+        "data": "ABABAB",
+        "validate": "TEXT",
+        "expected": ""
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "data": "A",
+        "validate": "TEXT",
+        "expected": ""
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "data": "B",
+        "validate": "TEXT",
+        "expected": ""
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 5,
+            "y": 0
+          }
+        },
+        "data": "ABABBB",
+        "validate": "TEXT",
+        "expected": "@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 6,
+            "y": 0
+          }
+        },
+        "data": "BBBABBA",
+        "validate": "TEXT",
+        "expected": "@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 7,
+            "y": 0
+          }
+        },
+        "data": "ABABABAA",
+        "validate": "TEXT",
+        "expected": "@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 8,
+            "y": 0
+          }
+        },
+        "data": "BBAABBAAB",
+        "validate": "TEXT",
+        "expected": "@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 9,
+            "y": 0
+          }
+        },
+        "data": "ABBABBABBB",
+        "validate": "TEXT",
+        "expected": "@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 10,
+            "y": 0
+          }
+        },
+        "data": "BABBBABABBA",
+        "validate": "TEXT",
+        "expected": "@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 11,
+            "y": 0
+          }
+        },
+        "data": "AABBAAABBAAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 12,
+            "y": 0
+          }
+        },
+        "data": "BBAAAABABABBB",
+        "validate": "TEXT",
+        "expected": "@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 13,
+            "y": 0
+          }
+        },
+        "data": "AABBBBBABBBBAB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 14,
+            "y": 0
+          }
+        },
+        "data": "BABBAAABBAAABAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 15,
+            "y": 0
+          }
+        },
+        "data": "AABBBABABABBABBB",
+        "validate": "TEXT",
+        "expected": "@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 16,
+            "y": 0
+          }
+        },
+        "data": "BBBBABBABBABBAABB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 17,
+            "y": 0
+          }
+        },
+        "data": "AAAAABBABABABABABA",
+        "validate": "TEXT",
+        "expected": "@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 18,
+            "y": 0
+          }
+        },
+        "data": "BAABABBBABABBABAAAB",
+        "validate": "TEXT",
+        "expected": "@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 19,
+            "y": 0
+          }
+        },
+        "data": "ABBBBAABAAABABAABABB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 20,
+            "y": 0
+          }
+        },
+        "data": "BAAABABAAABBABBABBBAB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 21,
+            "y": 0
+          }
+        },
+        "data": "AAAABAABBABAAAABABBAAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 22,
+            "y": 0
+          }
+        },
+        "data": "BBBAAABABBAABBBBBABBABA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 23,
+            "y": 0
+          }
+        },
+        "data": "AAABAAAAABBBBBBBBAABBABA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 24,
+            "y": 0
+          }
+        },
+        "data": "BAAABBABABBABBABAAABBAAAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 25,
+            "y": 0
+          }
+        },
+        "data": "ABAABAABBBBAABBAAABAABBBBB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 26,
+            "y": 0
+          }
+        },
+        "data": "BAABAABAAAABABBAAABBAABAAAB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "ABABBBBBAAABBBAAAABBBABABAAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BBABBBBBBBBAABAABBABBAAABABA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "AABABBAABBBBAABAAAAAABABAAAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BBBBAABAABBAAAAAAAABBABABBBA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "AAABABBABBBABBABAAAAABAAABBB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BAAABAABABABAABBAAAAAABBAABA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "AAABABBAAAABAABBBBABAAAAAAAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BABBBBBBABBAABBBBABBBBAABAAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "ABAAABBABAAABABAAAAABBABAABB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BBAABABAABABBBBAAABBBAAAABAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "AABBBBBBBBBBAAABBBBABBBBBBAB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BBBBAAAABBAAAAABAABABBABAAAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "AAAAABABABAABBAAAABBBBAAABAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BAABAAAAAAABABBBBBBBBBBBAAAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "ABBBBABAABBAAABBBABABBAABBBB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BBABBAABAABAAABABBABBBBABBBB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "ABAABABBABABBAAAAABBBABAAABB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BBAABAABBAAABBBBAABAABBBABAB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "AABAAAAABBBABAAABBBABAABBBBB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BABABABAAABAABAAAABBAAAABBAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "AAABBAAAABAABABBBABABABAABBA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BBBABBABAAAABBAAABBABBBBAAAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "ABABBAABBBBBAABBBABBBBBBBBBA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BABABABABBABBAABBABAABABBBBB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "ABBABBBBAABBAABBBAABAABAABAB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BABABBBBBBBAAAABBAABBAAAABAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "ABAAAABABBAAAABBABBBABBBAAAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BAABBBBBABBABBBABABBAABABABA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "AABAABBBBBAABBBBBBABBAAABBAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BBBABBBABBAABBBABBBBABABAABA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "ABABABBAAABBAAABBBBBBBABBBBA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BBBBBABBBAABBBABABAABAAAABAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "AABABBBBAABBAABBBABAABBBAABB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BBAAAAABBBBBAAAABABBABBBBABA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "AAABBAAAABBBBBABABBBABAAABAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BBBBAAABBAAAABBABAAABBAABAAB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "ABAABBAAABAAABBABABAABAAABBB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BBBAAAABAABAABBAABAAAABAABBB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "AABBBBABAAAABBAAAAABABAAAAAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BABAABBABBAABBABBBBABBAAABAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "AABABBABBBBBBAAABAAAABBBBABA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BABBABABBAABAABBAAABBBAABABB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "ABAABBBAABAABBBAABABABBAABBB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BABBBBABABABABABBABABABBAAAB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "ABBABBBBAABBBAABABABAAABBABB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BAAAAABAAABABAAAAABABAABBBAB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "AAAAAABBBABBABBAAABAABABBABB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BABBBAAAABBABAAAABABABABBAAB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "ABAABAAABABABAAABBAABAAABBBA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BBBABAAABBABBBBBABAAAAAABAAB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "AAABAAABAAAABABABBABABABABAB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BBAAABAABABBAAABBBBABABABBAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "AABBBAAABABBBABBBBABAAAAAAAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BBBAABAABAAAABBABBBABABBBBAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "ABBBBABBABBBBABABABBAAAAAABB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BABBBBABABAAABABAAABABBAABAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "ABBAABBBBAAAABBAAABBBABBAAAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BAABABBBAABBAABABAABBBABAABA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "AAABBBBABBABABAAABBABABBABBA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BABABAABBAAAABABBABABABBBBBA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "ABBABBABBBBAAAAABBBABABAAAAB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BAAABAABABBAABBBAABBAAAABABB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "ABAABABBAAABBBAAAABABABAABBA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BAAAAABBABABBBBABABABABBBBAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "ABAAABABBBBBABAABAABABBABABB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BAAAABBBAABAABBBBAAAABABBBAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "ABABAAAABABBAAAABAABAAABAAAB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BABBBABBBBBABABBBAABABABBBAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "AABBBABBBBBABBABBBBBBBABBAAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BABBABBABBBBBABBABBBBBBBAAAB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "ABBBABAAAAABBAAABBABABBABBBA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "AAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          }
+        },
+        "data": "BBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      }
+    ]
+  },
+  "2": {
+    "limits": {
+      "heads": 10,
+      "states": 1000,
+      "rules": 10000,
+      "steps": 1000000,
+      "bytes": 1000000
+    },
+    "cases": [
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 8,
+            "y": 0
+          },
+          "C": {
+            "x": 8,
+            "y": 1
+          },
+          "D": {
+            "x": 0,
+            "y": 1
+          }
+        },
+        "data": "ABBAABAAB\nAAABBBAAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 5,
+            "y": 0
+          },
+          "C": {
+            "x": 5,
+            "y": 1
+          },
+          "D": {
+            "x": 0,
+            "y": 1
+          }
+        },
+        "data": "ABABAB\nABABAB",
+        "validate": "TEXT",
+        "expected": ""
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 0,
+            "y": 0
+          },
+          "C": {
+            "x": 0,
+            "y": 0
+          },
+          "D": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "data": "A",
+        "validate": "TEXT",
+        "expected": ""
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 0,
+            "y": 0
+          },
+          "C": {
+            "x": 0,
+            "y": 0
+          },
+          "D": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "data": "B",
+        "validate": "TEXT",
+        "expected": ""
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 0,
+            "y": 0
+          },
+          "C": {
+            "x": 0,
+            "y": 1
+          },
+          "D": {
+            "x": 0,
+            "y": 1
+          }
+        },
+        "data": "A\nA",
+        "validate": "TEXT",
+        "expected": ""
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 0,
+            "y": 0
+          },
+          "C": {
+            "x": 0,
+            "y": 1
+          },
+          "D": {
+            "x": 0,
+            "y": 1
+          }
+        },
+        "data": "B\nB",
+        "validate": "TEXT",
+        "expected": ""
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 7,
+            "y": 0
+          },
+          "C": {
+            "x": 7,
+            "y": 0
+          },
+          "D": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "data": "ABBBABBB",
+        "validate": "TEXT",
+        "expected": "@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 7,
+            "y": 0
+          },
+          "C": {
+            "x": 7,
+            "y": 0
+          },
+          "D": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "data": "ABBBABAB",
+        "validate": "TEXT",
+        "expected": "@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 7,
+            "y": 0
+          },
+          "C": {
+            "x": 7,
+            "y": 0
+          },
+          "D": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "data": "ABAABBBB",
+        "validate": "TEXT",
+        "expected": "@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 7,
+            "y": 0
+          },
+          "C": {
+            "x": 7,
+            "y": 0
+          },
+          "D": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "data": "ABBAAABB",
+        "validate": "TEXT",
+        "expected": "@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 7,
+            "y": 0
+          },
+          "C": {
+            "x": 7,
+            "y": 0
+          },
+          "D": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "data": "BBABBBBB",
+        "validate": "TEXT",
+        "expected": "@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 7,
+            "y": 0
+          },
+          "C": {
+            "x": 7,
+            "y": 0
+          },
+          "D": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "data": "BBABBBBB",
+        "validate": "TEXT",
+        "expected": "@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 7,
+            "y": 0
+          },
+          "C": {
+            "x": 7,
+            "y": 0
+          },
+          "D": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "data": "BABBBBBB",
+        "validate": "TEXT",
+        "expected": "@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 7,
+            "y": 0
+          },
+          "C": {
+            "x": 7,
+            "y": 0
+          },
+          "D": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "data": "BBAABBAB",
+        "validate": "TEXT",
+        "expected": "@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 7,
+            "y": 0
+          },
+          "C": {
+            "x": 7,
+            "y": 0
+          },
+          "D": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "data": "AABBABBA",
+        "validate": "TEXT",
+        "expected": "@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 7,
+            "y": 0
+          },
+          "C": {
+            "x": 7,
+            "y": 0
+          },
+          "D": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "data": "ABBAAABB",
+        "validate": "TEXT",
+        "expected": "@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 7,
+            "y": 0
+          },
+          "C": {
+            "x": 7,
+            "y": 0
+          },
+          "D": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "data": "BBBAAAAB",
+        "validate": "TEXT",
+        "expected": "@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 7,
+            "y": 0
+          },
+          "C": {
+            "x": 7,
+            "y": 0
+          },
+          "D": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "data": "AAAAAAAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 7,
+            "y": 0
+          },
+          "C": {
+            "x": 7,
+            "y": 0
+          },
+          "D": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "data": "AABBBBBB",
+        "validate": "TEXT",
+        "expected": "@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 7,
+            "y": 0
+          },
+          "C": {
+            "x": 7,
+            "y": 0
+          },
+          "D": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "data": "AAAAABAB",
+        "validate": "TEXT",
+        "expected": "@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 12,
+            "y": 0
+          },
+          "C": {
+            "x": 12,
+            "y": 1
+          },
+          "D": {
+            "x": 0,
+            "y": 1
+          }
+        },
+        "data": "AAAAABBBBABBA\nBBABABAAABAAB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 12,
+            "y": 0
+          },
+          "C": {
+            "x": 12,
+            "y": 1
+          },
+          "D": {
+            "x": 0,
+            "y": 1
+          }
+        },
+        "data": "BABBAAAAAAAAA\nABBBBBAABBABA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 12,
+            "y": 0
+          },
+          "C": {
+            "x": 12,
+            "y": 1
+          },
+          "D": {
+            "x": 0,
+            "y": 1
+          }
+        },
+        "data": "BABABBBBBABAA\nBAAAABBABBBBA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 12,
+            "y": 0
+          },
+          "C": {
+            "x": 12,
+            "y": 1
+          },
+          "D": {
+            "x": 0,
+            "y": 1
+          }
+        },
+        "data": "AAABBBAABAABA\nBAAAAAABAAAAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 12,
+            "y": 0
+          },
+          "C": {
+            "x": 12,
+            "y": 1
+          },
+          "D": {
+            "x": 0,
+            "y": 1
+          }
+        },
+        "data": "AABBBAABBABAB\nAAABBBAAAAAAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 12,
+            "y": 0
+          },
+          "C": {
+            "x": 12,
+            "y": 1
+          },
+          "D": {
+            "x": 0,
+            "y": 1
+          }
+        },
+        "data": "BBABBBABAAABA\nBBBBBBAABBBBA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 12,
+            "y": 0
+          },
+          "C": {
+            "x": 12,
+            "y": 1
+          },
+          "D": {
+            "x": 0,
+            "y": 1
+          }
+        },
+        "data": "BBBABAABAABBB\nABBBBABABBABB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 12,
+            "y": 0
+          },
+          "C": {
+            "x": 12,
+            "y": 1
+          },
+          "D": {
+            "x": 0,
+            "y": 1
+          }
+        },
+        "data": "AABABBABABAAB\nBAABBBABBAABB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 12,
+            "y": 0
+          },
+          "C": {
+            "x": 12,
+            "y": 1
+          },
+          "D": {
+            "x": 0,
+            "y": 1
+          }
+        },
+        "data": "ABBABBAABBAAB\nBABAABBAAAABA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 12,
+            "y": 0
+          },
+          "C": {
+            "x": 12,
+            "y": 1
+          },
+          "D": {
+            "x": 0,
+            "y": 1
+          }
+        },
+        "data": "ABABBABBBBABA\nBBBBBAABBABAB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 12,
+            "y": 0
+          },
+          "C": {
+            "x": 12,
+            "y": 1
+          },
+          "D": {
+            "x": 0,
+            "y": 1
+          }
+        },
+        "data": "BBBAABABAAAAA\nAABBAABAABAAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 12,
+            "y": 0
+          },
+          "C": {
+            "x": 12,
+            "y": 1
+          },
+          "D": {
+            "x": 0,
+            "y": 1
+          }
+        },
+        "data": "AAAAABBBBAABA\nBAAAABBBAAAAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 12,
+            "y": 0
+          },
+          "C": {
+            "x": 12,
+            "y": 1
+          },
+          "D": {
+            "x": 0,
+            "y": 1
+          }
+        },
+        "data": "BBBAAABBBAAAA\nBBABBAAAAAABB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 12,
+            "y": 0
+          },
+          "C": {
+            "x": 12,
+            "y": 1
+          },
+          "D": {
+            "x": 0,
+            "y": 1
+          }
+        },
+        "data": "BAABBABAABAAA\nBAABAAABABBBB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 12,
+            "y": 0
+          },
+          "C": {
+            "x": 12,
+            "y": 1
+          },
+          "D": {
+            "x": 0,
+            "y": 1
+          }
+        },
+        "data": "AAAAABBAABAAA\nBBBBABBBBAABB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 12,
+            "y": 0
+          },
+          "C": {
+            "x": 12,
+            "y": 1
+          },
+          "D": {
+            "x": 0,
+            "y": 1
+          }
+        },
+        "data": "BBBBABBAABAAA\nAAABBABBBABBA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 12,
+            "y": 0
+          },
+          "C": {
+            "x": 12,
+            "y": 1
+          },
+          "D": {
+            "x": 0,
+            "y": 1
+          }
+        },
+        "data": "ABABBABBBBAAA\nABBAABABAAAAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 12,
+            "y": 0
+          },
+          "C": {
+            "x": 12,
+            "y": 1
+          },
+          "D": {
+            "x": 0,
+            "y": 1
+          }
+        },
+        "data": "ABABAAAABAAAA\nBBBBABBBBBBBB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 12,
+            "y": 0
+          },
+          "C": {
+            "x": 12,
+            "y": 1
+          },
+          "D": {
+            "x": 0,
+            "y": 1
+          }
+        },
+        "data": "BAAABAAABAAAB\nBAAABBBAAAABA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 12,
+            "y": 0
+          },
+          "C": {
+            "x": 12,
+            "y": 1
+          },
+          "D": {
+            "x": 0,
+            "y": 1
+          }
+        },
+        "data": "BBABAABABBBAB\nBBBBBBBBBBBBB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 17,
+            "y": 0
+          },
+          "C": {
+            "x": 17,
+            "y": 2
+          },
+          "D": {
+            "x": 0,
+            "y": 2
+          }
+        },
+        "data": "ABBBBABAABBBBBBAAA\nABBABABABBBBBBAABA\nABAABABBBBBABAAABB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 17,
+            "y": 0
+          },
+          "C": {
+            "x": 17,
+            "y": 2
+          },
+          "D": {
+            "x": 0,
+            "y": 2
+          }
+        },
+        "data": "ABBAAAABAABABBBBBB\nBBABAAAAAABAABABAB\nBAABAAABBABAABBBBB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 17,
+            "y": 0
+          },
+          "C": {
+            "x": 17,
+            "y": 2
+          },
+          "D": {
+            "x": 0,
+            "y": 2
+          }
+        },
+        "data": "AAABBBABBABABBBBAA\nBAABBABABBBBBAABBA\nBBABBBBBBBABAABAAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 17,
+            "y": 0
+          },
+          "C": {
+            "x": 17,
+            "y": 2
+          },
+          "D": {
+            "x": 0,
+            "y": 2
+          }
+        },
+        "data": "ABBABABAABAAABBAAB\nAAABBABABAAAABBABA\nBBBBAABBBBBBAABABB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 17,
+            "y": 0
+          },
+          "C": {
+            "x": 17,
+            "y": 2
+          },
+          "D": {
+            "x": 0,
+            "y": 2
+          }
+        },
+        "data": "ABBAABAABABABBBBAB\nAAABBBAAABBBBAABAA\nABBABABAAAAAABABAB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 17,
+            "y": 0
+          },
+          "C": {
+            "x": 17,
+            "y": 2
+          },
+          "D": {
+            "x": 0,
+            "y": 2
+          }
+        },
+        "data": "BAAAABBAABBAAAAAAA\nBABBAABBBBBAAABAAB\nAABABAAAABBABBBABA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 17,
+            "y": 0
+          },
+          "C": {
+            "x": 17,
+            "y": 2
+          },
+          "D": {
+            "x": 0,
+            "y": 2
+          }
+        },
+        "data": "AAAABBAAAAAABBABBA\nBAAABBABBBABAAAAAB\nBAABBBAAAABAABABBA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 17,
+            "y": 0
+          },
+          "C": {
+            "x": 17,
+            "y": 2
+          },
+          "D": {
+            "x": 0,
+            "y": 2
+          }
+        },
+        "data": "BABABBAABABBBBAABA\nBBBBBAAABAAAAABBAB\nAAABBAABBBAAABBABA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 17,
+            "y": 0
+          },
+          "C": {
+            "x": 17,
+            "y": 2
+          },
+          "D": {
+            "x": 0,
+            "y": 2
+          }
+        },
+        "data": "ABAAAABABABAABBBBB\nABABBBABABABBAAAAA\nABAABABABBBBBBAABB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 17,
+            "y": 0
+          },
+          "C": {
+            "x": 17,
+            "y": 2
+          },
+          "D": {
+            "x": 0,
+            "y": 2
+          }
+        },
+        "data": "AAABABBBBABAAABABB\nABBBBABBABBBABBBBA\nBBBBBAAABBABABABAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 17,
+            "y": 0
+          },
+          "C": {
+            "x": 17,
+            "y": 2
+          },
+          "D": {
+            "x": 0,
+            "y": 2
+          }
+        },
+        "data": "BBBABBAABBBBBBAABA\nABBBBBBABBBABBAAAB\nBBABBAABBBBABBBBBA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 17,
+            "y": 0
+          },
+          "C": {
+            "x": 17,
+            "y": 2
+          },
+          "D": {
+            "x": 0,
+            "y": 2
+          }
+        },
+        "data": "BBBAABABABBAABABAA\nBBBABABBAAAAABBABB\nAABBAABAABBBABBBAB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 17,
+            "y": 0
+          },
+          "C": {
+            "x": 17,
+            "y": 2
+          },
+          "D": {
+            "x": 0,
+            "y": 2
+          }
+        },
+        "data": "BAABAAABAAAABAAABA\nAABBAAAABAAABAABAA\nABABAAABBAABABBBBA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 17,
+            "y": 0
+          },
+          "C": {
+            "x": 17,
+            "y": 2
+          },
+          "D": {
+            "x": 0,
+            "y": 2
+          }
+        },
+        "data": "AAAAABAAABBBBAAABB\nAAAABABBBABBBAAAAB\nAABABBBBAABAABBABB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 17,
+            "y": 0
+          },
+          "C": {
+            "x": 17,
+            "y": 2
+          },
+          "D": {
+            "x": 0,
+            "y": 2
+          }
+        },
+        "data": "AAABBAAAABAABABABA\nABAAAAABBABAABBBBB\nBAABBABBABABABABAB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 17,
+            "y": 0
+          },
+          "C": {
+            "x": 17,
+            "y": 2
+          },
+          "D": {
+            "x": 0,
+            "y": 2
+          }
+        },
+        "data": "BBBBBBAABBABABAABB\nAABBBBAAABBBABABBB\nBBBABABBAABABBBBAB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 17,
+            "y": 0
+          },
+          "C": {
+            "x": 17,
+            "y": 2
+          },
+          "D": {
+            "x": 0,
+            "y": 2
+          }
+        },
+        "data": "BBABAAAAAAAABAABBB\nBBABABBBABBABAABBB\nBABABAABBBBBABAAAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 17,
+            "y": 0
+          },
+          "C": {
+            "x": 17,
+            "y": 2
+          },
+          "D": {
+            "x": 0,
+            "y": 2
+          }
+        },
+        "data": "AAAAABABBAABABBABA\nBBAAAAAABABAABBABA\nAABBAAAAAABAAABAAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 17,
+            "y": 0
+          },
+          "C": {
+            "x": 17,
+            "y": 2
+          },
+          "D": {
+            "x": 0,
+            "y": 2
+          }
+        },
+        "data": "BBBABAAABBBBAAABAB\nBABBAABBBAABABABBB\nBABABBABAAAABAABBB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 17,
+            "y": 0
+          },
+          "C": {
+            "x": 17,
+            "y": 2
+          },
+          "D": {
+            "x": 0,
+            "y": 2
+          }
+        },
+        "data": "ABBABBBABABBAABABA\nBABBABBBABAABAABAA\nABABBAAABAABABABBA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 22,
+            "y": 0
+          },
+          "C": {
+            "x": 22,
+            "y": 3
+          },
+          "D": {
+            "x": 0,
+            "y": 3
+          }
+        },
+        "data": "BBBAABBABAAAAABABABBBBB\nBABBBAAAAAABBAABBAABABB\nBBBAAABABBAABBAABBABBAA\nABABAABBBBAABABBBBBBBAB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 22,
+            "y": 0
+          },
+          "C": {
+            "x": 22,
+            "y": 3
+          },
+          "D": {
+            "x": 0,
+            "y": 3
+          }
+        },
+        "data": "BBAAABBABBBAAAAABAABABA\nAAABBABBBABABABABBAAABA\nABAAAAAAABABAABBBBBBBAB\nBBAABAAAAABAAAABBAABABB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 22,
+            "y": 0
+          },
+          "C": {
+            "x": 22,
+            "y": 3
+          },
+          "D": {
+            "x": 0,
+            "y": 3
+          }
+        },
+        "data": "AABABBAABAABABBAABABBAA\nABBABAABAABAAABBBABBAAA\nBAABABAABBAAABBAAABABBB\nBABAAABBAABBAABBBBBBBAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 22,
+            "y": 0
+          },
+          "C": {
+            "x": 22,
+            "y": 3
+          },
+          "D": {
+            "x": 0,
+            "y": 3
+          }
+        },
+        "data": "AAAAAABABBBBBAABAAAAAAB\nBAABABBBBBBBBBBBBBAABAB\nAABAABAABAABAAABBBAAAAB\nABAABBABBBABABABABABBAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 22,
+            "y": 0
+          },
+          "C": {
+            "x": 22,
+            "y": 3
+          },
+          "D": {
+            "x": 0,
+            "y": 3
+          }
+        },
+        "data": "AAABBABBAAAABAABBAAAABA\nABBBABBBAABBAABABBBAAAA\nBBBAAAABBAABAABBAABBABB\nAAABAAABAAAAABAABBAAABB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 22,
+            "y": 0
+          },
+          "C": {
+            "x": 22,
+            "y": 3
+          },
+          "D": {
+            "x": 0,
+            "y": 3
+          }
+        },
+        "data": "BABBAABAABBBABBABABAABB\nABABBAAAABBABBBABBAABBA\nAABABABABAAABBABBBABBBA\nABBABABBBBBBBBBBBABBAAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 22,
+            "y": 0
+          },
+          "C": {
+            "x": 22,
+            "y": 3
+          },
+          "D": {
+            "x": 0,
+            "y": 3
+          }
+        },
+        "data": "BAABABABBAAABBABBBABBAA\nBAAAABBABABAABABAAABBAA\nBBBBBBBAABBBABBBBBAAABB\nBABBAAAAAABABAAAABABBAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 22,
+            "y": 0
+          },
+          "C": {
+            "x": 22,
+            "y": 3
+          },
+          "D": {
+            "x": 0,
+            "y": 3
+          }
+        },
+        "data": "ABBABBBAAABABBAABBAABAB\nABAAAABBBBAAAABABAABABB\nBBAAAABBBBBBBAAABBABBAA\nABBBABAABBBABBABBBABABB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 22,
+            "y": 0
+          },
+          "C": {
+            "x": 22,
+            "y": 3
+          },
+          "D": {
+            "x": 0,
+            "y": 3
+          }
+        },
+        "data": "ABBABABBBABBBABAABBBBAA\nBBBABAABBBAABBBBBBBAABB\nABAABABABAAAAAABBBBBAAA\nABBABBBBABAAABBBBBBAABB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 22,
+            "y": 0
+          },
+          "C": {
+            "x": 22,
+            "y": 3
+          },
+          "D": {
+            "x": 0,
+            "y": 3
+          }
+        },
+        "data": "ABABBAAAABABBABBAABABAA\nABAAAABBAAAABAABBABBBBB\nAAAAABAAABAABABAABABBBA\nBABBBBABAABBABBABABBABA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 22,
+            "y": 0
+          },
+          "C": {
+            "x": 22,
+            "y": 3
+          },
+          "D": {
+            "x": 0,
+            "y": 3
+          }
+        },
+        "data": "AAABABBABBBBBABBABABAAA\nABBABBBAAAABBABABBAAAAB\nBAAAAAABABBAAABABBBBBAA\nABABBAABABBBABABABAABAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 22,
+            "y": 0
+          },
+          "C": {
+            "x": 22,
+            "y": 3
+          },
+          "D": {
+            "x": 0,
+            "y": 3
+          }
+        },
+        "data": "BBAABBBABBBAABBBBABAAAB\nABBABBABBBBABBBABAABBAB\nBBAABAABABAAAAAAAABBBBB\nAAABBABBAABBABBABBBBABA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 22,
+            "y": 0
+          },
+          "C": {
+            "x": 22,
+            "y": 3
+          },
+          "D": {
+            "x": 0,
+            "y": 3
+          }
+        },
+        "data": "ABBABBABBAABBBBBBAABBBB\nABBBAABABBAABAABBABAABA\nABBBABBABBBBABBAAABBABA\nBAAABABBABBAABBAABBAABB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 22,
+            "y": 0
+          },
+          "C": {
+            "x": 22,
+            "y": 3
+          },
+          "D": {
+            "x": 0,
+            "y": 3
+          }
+        },
+        "data": "ABAABABBABBABABBBAABABA\nAAABBBABABABBBABBABAAAB\nBBBBABBBBAAABBBABAABBBA\nAAAAAAAAAAABABAAAABABBB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 22,
+            "y": 0
+          },
+          "C": {
+            "x": 22,
+            "y": 3
+          },
+          "D": {
+            "x": 0,
+            "y": 3
+          }
+        },
+        "data": "AAABABAAABBABBAABBAAABB\nABBABBBBBBAAABAABAABABA\nAAAABABABABBABBBAABAAAA\nABBBAABBAAAABBBAABAAABB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 22,
+            "y": 0
+          },
+          "C": {
+            "x": 22,
+            "y": 3
+          },
+          "D": {
+            "x": 0,
+            "y": 3
+          }
+        },
+        "data": "AAABBAAABBAABBBAAAABBAB\nABABBABBBBABAAAABABBABB\nAAAAAABAAAABABABBBBBBAA\nAABABBABABBABAABBABAAAB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 22,
+            "y": 0
+          },
+          "C": {
+            "x": 22,
+            "y": 3
+          },
+          "D": {
+            "x": 0,
+            "y": 3
+          }
+        },
+        "data": "AABABAAABBABABABAABBABB\nBBBBBBBAAABBABBBBABABBA\nBBABAAABAAABBABABABAAAA\nBAAAAABABBAABABBAAABBBA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 22,
+            "y": 0
+          },
+          "C": {
+            "x": 22,
+            "y": 3
+          },
+          "D": {
+            "x": 0,
+            "y": 3
+          }
+        },
+        "data": "BBABAAABBAABAAAAAABAAAA\nABAABBBABABAABABABBABAB\nBBAAAAABABABBAAAABBBAAB\nBBBBABABBAAABABBBABBAAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 22,
+            "y": 0
+          },
+          "C": {
+            "x": 22,
+            "y": 3
+          },
+          "D": {
+            "x": 0,
+            "y": 3
+          }
+        },
+        "data": "BBBABBAAABAABBBAABABBBA\nAAABBAABBBAAABBABBBBBBB\nBBABBABABAABAAAABAABBBA\nAABAAAAAAAAABBBAAAAAAAB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 22,
+            "y": 0
+          },
+          "C": {
+            "x": 22,
+            "y": 3
+          },
+          "D": {
+            "x": 0,
+            "y": 3
+          }
+        },
+        "data": "ABAAABAAABAABABBAABBABA\nBABBAAABABBABBBABBBBABA\nAAAABBBAABAABBAABBABBBA\nBABAAABBAABAABAABAABBBB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          },
+          "C": {
+            "x": 27,
+            "y": 4
+          },
+          "D": {
+            "x": 0,
+            "y": 4
+          }
+        },
+        "data": "ABABABBAABAABAAABBBABAAABAAA\nBABABBABAAABBBAAABBABBAABAAB\nAAABBBABBBAABBAAABABBBBBAABA\nBABBBBBBBABBABBAABAABABABBAB\nBBABBABAABABAABAABBBAABBBBAB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          },
+          "C": {
+            "x": 27,
+            "y": 4
+          },
+          "D": {
+            "x": 0,
+            "y": 4
+          }
+        },
+        "data": "ABABBABAABBABABABBABABBBAAAA\nBBABBBABAAAABAAABBBABBBAABAB\nBBBBBBAABBABABAAAABBBBAABABA\nABBABAABAABABBABAAAAAAAAABAA\nBBBAAAAAAABBAAABAABBBABBABAB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          },
+          "C": {
+            "x": 27,
+            "y": 4
+          },
+          "D": {
+            "x": 0,
+            "y": 4
+          }
+        },
+        "data": "BAAAAAAAAAABBBBABAAAAABAABBB\nBAAAABBBBABBBBBAABAAAAAAABAA\nBAAABABAABBBBAAAABBAAABBBAAB\nABBBBBBABBABABABABABAABBBBBA\nABABAAABBABBBBBBABBABAABAABA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          },
+          "C": {
+            "x": 27,
+            "y": 4
+          },
+          "D": {
+            "x": 0,
+            "y": 4
+          }
+        },
+        "data": "BAABABBAABABBAAABBAAABBABABA\nABAAAABAABABBAAAABABBBBABABB\nABABAAAABBBBBABBAABABBBBBABA\nABBBABBAAABBABBBBBBBAAAAABAA\nBABBBABBBBAAABBBAAABABBBAABB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          },
+          "C": {
+            "x": 27,
+            "y": 4
+          },
+          "D": {
+            "x": 0,
+            "y": 4
+          }
+        },
+        "data": "AAABAAABBBBBBAABABABABABBABA\nBABBABBABBBAABBABAABBBAAABBB\nAAABBBBABAAAAAABBBBABBABBAAB\nBABBBBBBABABBAABAABBABBBAAAB\nBBAABBBAAAABBABBBBAAAABAAAAB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          },
+          "C": {
+            "x": 27,
+            "y": 4
+          },
+          "D": {
+            "x": 0,
+            "y": 4
+          }
+        },
+        "data": "ABAABBBABAAABABABABBABABABAA\nBBBAABABBBBBBAABABBBBAAABABB\nBBBBBBABBABBBAABBBBBABBBABAB\nBBBAAABAAAABBAABABABBABABAAB\nAAABBBBAAAABBABAAAABBABBAAAB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          },
+          "C": {
+            "x": 27,
+            "y": 4
+          },
+          "D": {
+            "x": 0,
+            "y": 4
+          }
+        },
+        "data": "AAAAABAAABBBABBABAABBBABABBB\nBBABBBABABBBBBAABABBBAAABAAB\nAABBBABAAAAAABBBBABBBBBAABAA\nBBBABBAAABBBBBBAABABBAAABAAB\nBABAAAABBBBABAABABAAAABBBBBA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          },
+          "C": {
+            "x": 27,
+            "y": 4
+          },
+          "D": {
+            "x": 0,
+            "y": 4
+          }
+        },
+        "data": "BBABAAABBAABBABABBABAAAABBAA\nABBBBBABBAAABABABBBAAAAABAAB\nBBBABAAAAAABBABABABBBBAABABB\nABAABABAAAAAAABABABAAABBABBB\nABABBBABABBBABABBAAAABBAAAAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          },
+          "C": {
+            "x": 27,
+            "y": 4
+          },
+          "D": {
+            "x": 0,
+            "y": 4
+          }
+        },
+        "data": "BABBAAABAAABBABABAAABBBBABAB\nAABBBBBBBBAABAABABABBAABABAA\nBBBBAABABAAABABBABBBABABBABB\nAAAAABBABABABABABBBBBBBAABAB\nBAAAABBABBABBBAAABAABABBBBAB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          },
+          "C": {
+            "x": 27,
+            "y": 4
+          },
+          "D": {
+            "x": 0,
+            "y": 4
+          }
+        },
+        "data": "ABABBAAAAAABBBAAABABAABABABA\nAAAABABAABAAAAABABAABBBBABBB\nBAAABAABAAAABBAAABBBABABBBBA\nBBBABAABABBAABBAAABBABBBAABB\nAABABBABABBBAABBAABABABBBBBB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          },
+          "C": {
+            "x": 27,
+            "y": 4
+          },
+          "D": {
+            "x": 0,
+            "y": 4
+          }
+        },
+        "data": "ABBBBAABABBBABABAABABBAAAAAB\nBBAAAABAAAAABAAAABBAAAABABBA\nAAAAAAAAABAABAAABAAAABABBAAB\nABBBAABABBBABBBAABBABBABAAAA\nAAAABAAAAABBABBBAAAAAAABBAAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          },
+          "C": {
+            "x": 27,
+            "y": 4
+          },
+          "D": {
+            "x": 0,
+            "y": 4
+          }
+        },
+        "data": "BABABAABABBBBABABBBAABABBAAA\nBBBBABBAABBABAAABABABBBBBABA\nABBABBBBBABBBBBBBAAABAABABAA\nBBABAABBAABBABBBABAABABBBBBA\nBABBBBAABBBBABABBABBABBAABAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          },
+          "C": {
+            "x": 27,
+            "y": 4
+          },
+          "D": {
+            "x": 0,
+            "y": 4
+          }
+        },
+        "data": "AAABBBBBBBBBBBAAABBBABBBABBB\nBABBBBAAABBBAAABBBAAAAABAAAA\nAABBABAABAAAAABABAABAAAABABB\nBAABBABABBAABBABAAAABAAAAAAA\nAABAAABAABBAAAAABAABAAAAABAB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          },
+          "C": {
+            "x": 27,
+            "y": 4
+          },
+          "D": {
+            "x": 0,
+            "y": 4
+          }
+        },
+        "data": "ABAAABAABBAABBBBBBAAABBAAAAB\nBAAAAAABBAABBBABBBABBBBBBBBB\nAABBABBBABBABABABABBABBAABBB\nBABBABAABAAAABBAAABBBAABAABA\nAABBAAABBBABBABABAAAABBBBAAB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          },
+          "C": {
+            "x": 27,
+            "y": 4
+          },
+          "D": {
+            "x": 0,
+            "y": 4
+          }
+        },
+        "data": "BBBABBABABBAAAAAABABABBAAABA\nBABABBBBBBABABAABBABBBABABBB\nAAABBABBBBBABAABAAABBABAABBA\nBAAABBBABBBBBBAABBABAAABAABB\nBBABBBBAABBABBBBAABBBAAABAAB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          },
+          "C": {
+            "x": 27,
+            "y": 4
+          },
+          "D": {
+            "x": 0,
+            "y": 4
+          }
+        },
+        "data": "BBAABBABAABBAAABABABBAABAAAB\nBABABBBBAAAAABABAABBBBABBBAB\nBAABBBBBBBBBAAAABBABBAAAABBA\nBBBAAAABAAAABABABBABABAAAAAB\nBBBAABABBAABAAAABBBAABBBABAB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          },
+          "C": {
+            "x": 27,
+            "y": 4
+          },
+          "D": {
+            "x": 0,
+            "y": 4
+          }
+        },
+        "data": "ABBBABAAABBBAAABBBBBBABBABAA\nBBABBBABABBABAAABBAABBBABAAB\nAAAABBBAAABABBBBAAAAAAAAAABA\nBAAABAAABBAAAABAABBBABAAAABB\nBAAAAAABBBBAABBBAABAABABABAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          },
+          "C": {
+            "x": 27,
+            "y": 4
+          },
+          "D": {
+            "x": 0,
+            "y": 4
+          }
+        },
+        "data": "BBAAABABABBAABAAABAABBAAAAAA\nBBAAABBAABAABAAABAABBABAABAA\nABBBBBAAAABAABBAABBABBAABBAA\nAAABAABBAABAAABABABBBAAABBBB\nBBBABABBBABBBBAAAABBABAAABAB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          },
+          "C": {
+            "x": 27,
+            "y": 4
+          },
+          "D": {
+            "x": 0,
+            "y": 4
+          }
+        },
+        "data": "AAAAAAAAAAAAAAAAAAAAAAAAAAAA\nAAAAAAAAAAAAAAAAAAAAAAAAAAAA\nAAAAAAAAAAAAAAAAAAAAAAAAAAAA\nAAAAAAAAAAAAAAAAAAAAAAAAAAAA\nAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          },
+          "C": {
+            "x": 27,
+            "y": 4
+          },
+          "D": {
+            "x": 0,
+            "y": 4
+          }
+        },
+        "data": "BBBBBBBBBBBBBBBBBBBBBBBBBBBB\nBBBBBBBBBBBBBBBBBBBBBBBBBBBB\nBBBBBBBBBBBBBBBBBBBBBBBBBBBB\nBBBBBBBBBBBBBBBBBBBBBBBBBBBB\nBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      }
+    ]
+  },
+  "3": {
+    "limits": {
+      "heads": 10,
+      "states": 1000,
+      "rules": 10000,
+      "steps": 1000000,
+      "bytes": 1000000
+    },
+    "cases": [
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 2,
+            "y": 0
+          },
+          "C": {
+            "x": 2,
+            "y": 2
+          },
+          "D": {
+            "x": 0,
+            "y": 2
+          }
+        },
+        "data": "ABA\nBBB\nABA",
+        "validate": "TEXT",
+        "expected": "@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 8,
+            "y": 0
+          },
+          "C": {
+            "x": 8,
+            "y": 1
+          },
+          "D": {
+            "x": 0,
+            "y": 1
+          }
+        },
+        "data": "ABBAABAAB\nAAABBBAAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 5,
+            "y": 0
+          },
+          "C": {
+            "x": 5,
+            "y": 1
+          },
+          "D": {
+            "x": 0,
+            "y": 1
+          }
+        },
+        "data": "ABABAB\nBABABA",
+        "validate": "TEXT",
+        "expected": ""
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 0,
+            "y": 0
+          },
+          "C": {
+            "x": 0,
+            "y": 0
+          },
+          "D": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "data": "A",
+        "validate": "TEXT",
+        "expected": ""
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 0,
+            "y": 0
+          },
+          "C": {
+            "x": 0,
+            "y": 0
+          },
+          "D": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "data": "B",
+        "validate": "TEXT",
+        "expected": ""
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 0,
+            "y": 0
+          },
+          "C": {
+            "x": 0,
+            "y": 1
+          },
+          "D": {
+            "x": 0,
+            "y": 1
+          }
+        },
+        "data": "A\nA",
+        "validate": "TEXT",
+        "expected": "@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 0,
+            "y": 0
+          },
+          "C": {
+            "x": 0,
+            "y": 1
+          },
+          "D": {
+            "x": 0,
+            "y": 1
+          }
+        },
+        "data": "B\nB",
+        "validate": "TEXT",
+        "expected": "@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 7,
+            "y": 0
+          },
+          "C": {
+            "x": 7,
+            "y": 0
+          },
+          "D": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "data": "BAABAAAB",
+        "validate": "TEXT",
+        "expected": "@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 7,
+            "y": 0
+          },
+          "C": {
+            "x": 7,
+            "y": 0
+          },
+          "D": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "data": "AABBAAAA",
+        "validate": "TEXT",
+        "expected": "@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 7,
+            "y": 0
+          },
+          "C": {
+            "x": 7,
+            "y": 0
+          },
+          "D": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "data": "AAAAABBA",
+        "validate": "TEXT",
+        "expected": "@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 7,
+            "y": 0
+          },
+          "C": {
+            "x": 7,
+            "y": 0
+          },
+          "D": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "data": "ABAAAAAB",
+        "validate": "TEXT",
+        "expected": "@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 7,
+            "y": 0
+          },
+          "C": {
+            "x": 7,
+            "y": 0
+          },
+          "D": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "data": "BAABBBAB",
+        "validate": "TEXT",
+        "expected": "@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 7,
+            "y": 0
+          },
+          "C": {
+            "x": 7,
+            "y": 0
+          },
+          "D": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "data": "BAABBBAB",
+        "validate": "TEXT",
+        "expected": "@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 7,
+            "y": 0
+          },
+          "C": {
+            "x": 7,
+            "y": 0
+          },
+          "D": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "data": "BABBBBBA",
+        "validate": "TEXT",
+        "expected": "@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 7,
+            "y": 0
+          },
+          "C": {
+            "x": 7,
+            "y": 0
+          },
+          "D": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "data": "ABAAABBB",
+        "validate": "TEXT",
+        "expected": "@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 7,
+            "y": 0
+          },
+          "C": {
+            "x": 7,
+            "y": 0
+          },
+          "D": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "data": "BAAABAAB",
+        "validate": "TEXT",
+        "expected": "@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 7,
+            "y": 0
+          },
+          "C": {
+            "x": 7,
+            "y": 0
+          },
+          "D": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "data": "AAAABAAB",
+        "validate": "TEXT",
+        "expected": "@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 7,
+            "y": 0
+          },
+          "C": {
+            "x": 7,
+            "y": 0
+          },
+          "D": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "data": "BABAAABA",
+        "validate": "TEXT",
+        "expected": "@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 7,
+            "y": 0
+          },
+          "C": {
+            "x": 7,
+            "y": 0
+          },
+          "D": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "data": "BAABBBAB",
+        "validate": "TEXT",
+        "expected": "@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 7,
+            "y": 0
+          },
+          "C": {
+            "x": 7,
+            "y": 0
+          },
+          "D": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "data": "AABBAABB",
+        "validate": "TEXT",
+        "expected": "@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 12,
+            "y": 0
+          },
+          "C": {
+            "x": 12,
+            "y": 1
+          },
+          "D": {
+            "x": 0,
+            "y": 1
+          }
+        },
+        "data": "BBBABBAAABAAB\nAAABBABBABBAB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 12,
+            "y": 0
+          },
+          "C": {
+            "x": 12,
+            "y": 1
+          },
+          "D": {
+            "x": 0,
+            "y": 1
+          }
+        },
+        "data": "BABABAABABBAA\nAAAAAABAAABBB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 12,
+            "y": 0
+          },
+          "C": {
+            "x": 12,
+            "y": 1
+          },
+          "D": {
+            "x": 0,
+            "y": 1
+          }
+        },
+        "data": "ABAABBBAAABBA\nBBABBAABBBAAB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 12,
+            "y": 0
+          },
+          "C": {
+            "x": 12,
+            "y": 1
+          },
+          "D": {
+            "x": 0,
+            "y": 1
+          }
+        },
+        "data": "ABAAAAAAABBAA\nBABBABAABABAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 12,
+            "y": 0
+          },
+          "C": {
+            "x": 12,
+            "y": 1
+          },
+          "D": {
+            "x": 0,
+            "y": 1
+          }
+        },
+        "data": "AAABBBABBBBAB\nBBBABAAAAABAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 12,
+            "y": 0
+          },
+          "C": {
+            "x": 12,
+            "y": 1
+          },
+          "D": {
+            "x": 0,
+            "y": 1
+          }
+        },
+        "data": "ABBBBBABAAABB\nBBABBBBAABABB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 12,
+            "y": 0
+          },
+          "C": {
+            "x": 12,
+            "y": 1
+          },
+          "D": {
+            "x": 0,
+            "y": 1
+          }
+        },
+        "data": "AABBAAABABAAA\nBBABBBBABBAAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 12,
+            "y": 0
+          },
+          "C": {
+            "x": 12,
+            "y": 1
+          },
+          "D": {
+            "x": 0,
+            "y": 1
+          }
+        },
+        "data": "BBABBBABBBAAB\nAAABAAAABAAAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 12,
+            "y": 0
+          },
+          "C": {
+            "x": 12,
+            "y": 1
+          },
+          "D": {
+            "x": 0,
+            "y": 1
+          }
+        },
+        "data": "BBBBAABBABBAB\nBAAAAABABBAAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 12,
+            "y": 0
+          },
+          "C": {
+            "x": 12,
+            "y": 1
+          },
+          "D": {
+            "x": 0,
+            "y": 1
+          }
+        },
+        "data": "ABBABABBBBBBB\nABABAABAAABAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 12,
+            "y": 0
+          },
+          "C": {
+            "x": 12,
+            "y": 1
+          },
+          "D": {
+            "x": 0,
+            "y": 1
+          }
+        },
+        "data": "BBABBBAAAAAAA\nAABBABABBBBAB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 12,
+            "y": 0
+          },
+          "C": {
+            "x": 12,
+            "y": 1
+          },
+          "D": {
+            "x": 0,
+            "y": 1
+          }
+        },
+        "data": "BBBABBBABBBAB\nAAAAAAAAAAABA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 12,
+            "y": 0
+          },
+          "C": {
+            "x": 12,
+            "y": 1
+          },
+          "D": {
+            "x": 0,
+            "y": 1
+          }
+        },
+        "data": "BABBBABBBBAAB\nAAAABABBAAABB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 12,
+            "y": 0
+          },
+          "C": {
+            "x": 12,
+            "y": 1
+          },
+          "D": {
+            "x": 0,
+            "y": 1
+          }
+        },
+        "data": "AAABABABAABBB\nAAAAABABABAAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 12,
+            "y": 0
+          },
+          "C": {
+            "x": 12,
+            "y": 1
+          },
+          "D": {
+            "x": 0,
+            "y": 1
+          }
+        },
+        "data": "ABABBABABBAAA\nBABBBBBBBBABA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 12,
+            "y": 0
+          },
+          "C": {
+            "x": 12,
+            "y": 1
+          },
+          "D": {
+            "x": 0,
+            "y": 1
+          }
+        },
+        "data": "BAAABBAABBABB\nABBBABBBBAABB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 12,
+            "y": 0
+          },
+          "C": {
+            "x": 12,
+            "y": 1
+          },
+          "D": {
+            "x": 0,
+            "y": 1
+          }
+        },
+        "data": "ABAAABAAAABBA\nAABABBABBBABB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 12,
+            "y": 0
+          },
+          "C": {
+            "x": 12,
+            "y": 1
+          },
+          "D": {
+            "x": 0,
+            "y": 1
+          }
+        },
+        "data": "ABBABBAABAABB\nBBBBBABBABABB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 12,
+            "y": 0
+          },
+          "C": {
+            "x": 12,
+            "y": 1
+          },
+          "D": {
+            "x": 0,
+            "y": 1
+          }
+        },
+        "data": "BBABBBBBBBAAA\nBBABABAABBABB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 12,
+            "y": 0
+          },
+          "C": {
+            "x": 12,
+            "y": 1
+          },
+          "D": {
+            "x": 0,
+            "y": 1
+          }
+        },
+        "data": "AAABAABBBBBBB\nBABBBABBAABBA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 17,
+            "y": 0
+          },
+          "C": {
+            "x": 17,
+            "y": 2
+          },
+          "D": {
+            "x": 0,
+            "y": 2
+          }
+        },
+        "data": "BABABAABBBBAAAABBA\nBAAAAABAABAABBBABB\nABBBABAABABBABBABA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 17,
+            "y": 0
+          },
+          "C": {
+            "x": 17,
+            "y": 2
+          },
+          "D": {
+            "x": 0,
+            "y": 2
+          }
+        },
+        "data": "BABBBBAAAAABBBBBBA\nABBBBAABBABABBAAAB\nAAABAABAAAAAAAABBA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 17,
+            "y": 0
+          },
+          "C": {
+            "x": 17,
+            "y": 2
+          },
+          "D": {
+            "x": 0,
+            "y": 2
+          }
+        },
+        "data": "BABAABBABBAAABBBAB\nABBAABBAAAAABAAAAB\nBBABBBABBABBBBBBAB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 17,
+            "y": 0
+          },
+          "C": {
+            "x": 17,
+            "y": 2
+          },
+          "D": {
+            "x": 0,
+            "y": 2
+          }
+        },
+        "data": "BABBBAABBABBAAAABA\nBBBAABAAABBBABBBBB\nABBBAABAABBBAAAABA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 17,
+            "y": 0
+          },
+          "C": {
+            "x": 17,
+            "y": 2
+          },
+          "D": {
+            "x": 0,
+            "y": 2
+          }
+        },
+        "data": "BABBAABABBABBAABBA\nAAABABBBBABBBAABBA\nBBABBABBBBABBABBAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 17,
+            "y": 0
+          },
+          "C": {
+            "x": 17,
+            "y": 2
+          },
+          "D": {
+            "x": 0,
+            "y": 2
+          }
+        },
+        "data": "AABAABABABBABAAAAB\nAABABBAABBBBABBBAB\nBBABAABAABAABAAABA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 17,
+            "y": 0
+          },
+          "C": {
+            "x": 17,
+            "y": 2
+          },
+          "D": {
+            "x": 0,
+            "y": 2
+          }
+        },
+        "data": "AAABABBBBAABABBBBB\nBBABABABAAAABAABAA\nBAAABAABBBBAABAABA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 17,
+            "y": 0
+          },
+          "C": {
+            "x": 17,
+            "y": 2
+          },
+          "D": {
+            "x": 0,
+            "y": 2
+          }
+        },
+        "data": "BBBAABABAABAAABAAB\nABABBBABABBBBBBBBB\nABBABAABBBAABBAABB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 17,
+            "y": 0
+          },
+          "C": {
+            "x": 17,
+            "y": 2
+          },
+          "D": {
+            "x": 0,
+            "y": 2
+          }
+        },
+        "data": "ABABBAAAABBAABBAAB\nAAABABBABBBBAABBAB\nBAABBABAABBBAAABBB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 17,
+            "y": 0
+          },
+          "C": {
+            "x": 17,
+            "y": 2
+          },
+          "D": {
+            "x": 0,
+            "y": 2
+          }
+        },
+        "data": "AAAABBABABABAAAAAA\nBBAABABBAAABAABBAA\nBBAABBABABBBAAABAB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 17,
+            "y": 0
+          },
+          "C": {
+            "x": 17,
+            "y": 2
+          },
+          "D": {
+            "x": 0,
+            "y": 2
+          }
+        },
+        "data": "AABBBBABAAAABBBAAA\nAABBBBBBAAABBABABA\nBABBAAABABBAABBABB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 17,
+            "y": 0
+          },
+          "C": {
+            "x": 17,
+            "y": 2
+          },
+          "D": {
+            "x": 0,
+            "y": 2
+          }
+        },
+        "data": "ABAAAAABBAAABBABAA\nBABABABBAAAAABBABA\nBAABAAABAAABABABBA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 17,
+            "y": 0
+          },
+          "C": {
+            "x": 17,
+            "y": 2
+          },
+          "D": {
+            "x": 0,
+            "y": 2
+          }
+        },
+        "data": "BAABAABBABAAAAABAA\nBAAAABAABBBBAAAABA\nBBBBBAABAABAABABBA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 17,
+            "y": 0
+          },
+          "C": {
+            "x": 17,
+            "y": 2
+          },
+          "D": {
+            "x": 0,
+            "y": 2
+          }
+        },
+        "data": "AABABBBAABBABAABAA\nBBBBABAAAAAABBBAAA\nAAAABBBABABBAABABA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 17,
+            "y": 0
+          },
+          "C": {
+            "x": 17,
+            "y": 2
+          },
+          "D": {
+            "x": 0,
+            "y": 2
+          }
+        },
+        "data": "BBAAABAAABBABBABAA\nABABABBAABAAAABBBA\nBBBBAAABBABAAAAABA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 17,
+            "y": 0
+          },
+          "C": {
+            "x": 17,
+            "y": 2
+          },
+          "D": {
+            "x": 0,
+            "y": 2
+          }
+        },
+        "data": "AAABAAABAABBAAABAB\nAAABBABAAAABBABBBA\nAABBBABABABABABABA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 17,
+            "y": 0
+          },
+          "C": {
+            "x": 17,
+            "y": 2
+          },
+          "D": {
+            "x": 0,
+            "y": 2
+          }
+        },
+        "data": "AAAABAABABBAABBBBB\nAAABABBABABBBBBABA\nBBBABBAAAAABBBBBBA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 17,
+            "y": 0
+          },
+          "C": {
+            "x": 17,
+            "y": 2
+          },
+          "D": {
+            "x": 0,
+            "y": 2
+          }
+        },
+        "data": "ABABBAAABAAABABAAA\nBBBBBABBBABABABBAB\nAAABABABBBBAABABAB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 17,
+            "y": 0
+          },
+          "C": {
+            "x": 17,
+            "y": 2
+          },
+          "D": {
+            "x": 0,
+            "y": 2
+          }
+        },
+        "data": "BABBAAAABAAABABABB\nBABAAABABAAABBBAAA\nAABAAAABBBBAAABAAB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 17,
+            "y": 0
+          },
+          "C": {
+            "x": 17,
+            "y": 2
+          },
+          "D": {
+            "x": 0,
+            "y": 2
+          }
+        },
+        "data": "AAABBAAABBBBBBBBBA\nBABABBBBBBAABBBBAA\nAABBABABAAABAAAAAB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 22,
+            "y": 0
+          },
+          "C": {
+            "x": 22,
+            "y": 3
+          },
+          "D": {
+            "x": 0,
+            "y": 3
+          }
+        },
+        "data": "AABAABBABBABABBBBABBBBA\nBBABBBBBABAABBBBBABBBBB\nAABABABBAABBBBABAAABBBA\nBABABBABBBAABAABBABBAAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 22,
+            "y": 0
+          },
+          "C": {
+            "x": 22,
+            "y": 3
+          },
+          "D": {
+            "x": 0,
+            "y": 3
+          }
+        },
+        "data": "ABAABBBBABABBABABBBAAAB\nBABAAAAAAABBBBBBBAABBAA\nAAABAAAABABAABAABBBBBBB\nAAAABAABABBAAABABAABBBB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 22,
+            "y": 0
+          },
+          "C": {
+            "x": 22,
+            "y": 3
+          },
+          "D": {
+            "x": 0,
+            "y": 3
+          }
+        },
+        "data": "BABBAAABABABBAABAABABAB\nBBBAABAABBBABBABABBBABB\nABBABBBBABBBBBBBBAABABA\nABABBABAAAABABBBBAABAAB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 22,
+            "y": 0
+          },
+          "C": {
+            "x": 22,
+            "y": 3
+          },
+          "D": {
+            "x": 0,
+            "y": 3
+          }
+        },
+        "data": "ABABAAAAAAABABBBBABBAAA\nABBBABBABAAABABBAAAABAA\nAABBAABBBABAAAAABBAABBB\nAAABAABAABBABBBBABAAAAB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 22,
+            "y": 0
+          },
+          "C": {
+            "x": 22,
+            "y": 3
+          },
+          "D": {
+            "x": 0,
+            "y": 3
+          }
+        },
+        "data": "AABBAABBBAABABBAAAAABAA\nAAAABABABABBBAABBAABBBB\nAAAAAABBABABBBBABABBBBA\nABBAAAABBAABAABBBAABBBB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 22,
+            "y": 0
+          },
+          "C": {
+            "x": 22,
+            "y": 3
+          },
+          "D": {
+            "x": 0,
+            "y": 3
+          }
+        },
+        "data": "BBAAAAABABBAAABBAAAABBB\nABABABABABABAAABBBBAABB\nBBBBABABABBBAABABBBABBA\nBBAABAAAAABAAAAAAABABBA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 22,
+            "y": 0
+          },
+          "C": {
+            "x": 22,
+            "y": 3
+          },
+          "D": {
+            "x": 0,
+            "y": 3
+          }
+        },
+        "data": "AAAAAAAAAABABBAABBBAABA\nAABBBBAABBABBBAABAABAAA\nAAABABABBABABBABAAAAAAA\nABBBBAABBAAABBABABABBBA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 22,
+            "y": 0
+          },
+          "C": {
+            "x": 22,
+            "y": 3
+          },
+          "D": {
+            "x": 0,
+            "y": 3
+          }
+        },
+        "data": "AAAAABBBBBAABAABBBAAABB\nBAABBAABBAAAAABBBBAABBB\nBAABABAABAAABBBBAAABBAB\nAABAAABABABAABAABBAAABA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 22,
+            "y": 0
+          },
+          "C": {
+            "x": 22,
+            "y": 3
+          },
+          "D": {
+            "x": 0,
+            "y": 3
+          }
+        },
+        "data": "AAAABBBAABBBAABBAAAABBB\nBABABBBABBABAABABABBAAA\nAAAABAABAABABABBBABABBB\nBBAABBBABABABABBBABAAAB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 22,
+            "y": 0
+          },
+          "C": {
+            "x": 22,
+            "y": 3
+          },
+          "D": {
+            "x": 0,
+            "y": 3
+          }
+        },
+        "data": "BBABAABABBBAABBBAABAAAA\nAABBBABBABAAABBBABAAAAB\nAABABABBBABBAAABAABAAAA\nBAAABABAABBABBBBBBAABBB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 22,
+            "y": 0
+          },
+          "C": {
+            "x": 22,
+            "y": 3
+          },
+          "D": {
+            "x": 0,
+            "y": 3
+          }
+        },
+        "data": "ABABBBABAABBAABAAAABAAB\nBAAABAAABBBBAABAAABABAB\nBABAABBBAAABBABBAAABAAB\nBAABBBAABBAAAAAABBABBAB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 22,
+            "y": 0
+          },
+          "C": {
+            "x": 22,
+            "y": 3
+          },
+          "D": {
+            "x": 0,
+            "y": 3
+          }
+        },
+        "data": "BABBABBABAAABABBBBAAAAB\nBABBAAAABBABBAAAAABBBAB\nBABAAABABBBABBABABABBBB\nBABBBAAABAABAABBABBBBAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 22,
+            "y": 0
+          },
+          "C": {
+            "x": 22,
+            "y": 3
+          },
+          "D": {
+            "x": 0,
+            "y": 3
+          }
+        },
+        "data": "ABABBBBBBAABAAAAABABBAA\nAABAABAAAAAABAAABBBBBAA\nBABBABBBABBBAAAAAAABBBA\nAABABBBBBBAAABAAABABAAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 22,
+            "y": 0
+          },
+          "C": {
+            "x": 22,
+            "y": 3
+          },
+          "D": {
+            "x": 0,
+            "y": 3
+          }
+        },
+        "data": "AABAAABABABBABABBAABAAB\nBABBAABAABAABAAABAABBAB\nBBAABAABAAABABBBBAAAABA\nABAABBBBAABABABBBAAAAAB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 22,
+            "y": 0
+          },
+          "C": {
+            "x": 22,
+            "y": 3
+          },
+          "D": {
+            "x": 0,
+            "y": 3
+          }
+        },
+        "data": "ABAABAABAAABABAABBBABBA\nABBBAAAABAABABAABBABBBB\nBABBABAAAABBBBAAAAABBAA\nAABBBABAABBBBABBAAABBAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 22,
+            "y": 0
+          },
+          "C": {
+            "x": 22,
+            "y": 3
+          },
+          "D": {
+            "x": 0,
+            "y": 3
+          }
+        },
+        "data": "AAAAABABABABBBBBBBAAABB\nABBBBABABBBABBABABBAAAA\nABBBBAABBBBBBBBBBBBAAAA\nABABAABAAAABAABBBBABBBA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 22,
+            "y": 0
+          },
+          "C": {
+            "x": 22,
+            "y": 3
+          },
+          "D": {
+            "x": 0,
+            "y": 3
+          }
+        },
+        "data": "AAABBBBABBBBBBBBBBAAABA\nBBABABBBABBBBBAAABAAAAA\nAAAABBABABAABAABBAABAAB\nABAAAAABBBBBBBBBAABAABB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 22,
+            "y": 0
+          },
+          "C": {
+            "x": 22,
+            "y": 3
+          },
+          "D": {
+            "x": 0,
+            "y": 3
+          }
+        },
+        "data": "ABBBABBBBBAAABABBBAAAAB\nAABBBABABAABBABBBABABBB\nAABAAABAAAAAAABABAAAAAB\nAAABBAAABAABBAAABBBAABA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 22,
+            "y": 0
+          },
+          "C": {
+            "x": 22,
+            "y": 3
+          },
+          "D": {
+            "x": 0,
+            "y": 3
+          }
+        },
+        "data": "ABAAABBABBAABBBAAABBABB\nBBABBAAAAABBBBBBABAAAAA\nAAABBAABAABAABABAAABBAA\nABBBBBABABAABABAABABBAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 22,
+            "y": 0
+          },
+          "C": {
+            "x": 22,
+            "y": 3
+          },
+          "D": {
+            "x": 0,
+            "y": 3
+          }
+        },
+        "data": "BBBABABBBAABBAABAABABBB\nBBABBAAABAABBABBBBBBBAA\nAABAABBAAABBBAABAAAABBA\nABABBAAABAABABABAABBBBB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          },
+          "C": {
+            "x": 27,
+            "y": 4
+          },
+          "D": {
+            "x": 0,
+            "y": 4
+          }
+        },
+        "data": "ABABBBBABAABBBAAABAAABBABAAB\nBBBBABABABBBBBABBABABABBABAB\nBBBABBBAABBAABAABAABBAABABBA\nABBBAAAAABBBBBBBAABABABABBAA\nAAAABAAAABAABBBBAAABBABAABAB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          },
+          "C": {
+            "x": 27,
+            "y": 4
+          },
+          "D": {
+            "x": 0,
+            "y": 4
+          }
+        },
+        "data": "ABBBBBBBBBABBBAAAABBBBABBBAB\nBBAAAAABABAAABBBAABAABBABBAB\nBAABABBBABBBAABBBBBABABBBBBA\nAAABBABBBABABBBBBABBBBAAABBA\nAABAAABAABAABAAAABAAAAAABBBA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          },
+          "C": {
+            "x": 27,
+            "y": 4
+          },
+          "D": {
+            "x": 0,
+            "y": 4
+          }
+        },
+        "data": "BABAAABABBABAABAABAAABBBABBB\nAABAAABAABBABBAABAAABABBABAA\nBAABBAABBABABBABBBBBBAABBBAA\nBABABBAAABBABBBBBBAAAAABBBBA\nAABBBBBBBBBBBABBBAABAABBAAAB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          },
+          "C": {
+            "x": 27,
+            "y": 4
+          },
+          "D": {
+            "x": 0,
+            "y": 4
+          }
+        },
+        "data": "ABAAAABABBBABBBBAAAABBBBBBBA\nAAABBABABABABAABBBABBABAABBB\nBBBBBBABAABAAAAAABABBAAABAAA\nBBBBAAABBAABBABAAABAABAABBBA\nABAABABABAABBABBABABAAAAAAAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          },
+          "C": {
+            "x": 27,
+            "y": 4
+          },
+          "D": {
+            "x": 0,
+            "y": 4
+          }
+        },
+        "data": "BBBABBABBAABBAABAAABBAAAAABB\nABBABAAABABAABBABBBABABABABB\nAAAAAAABBBBABBBBABBBBBABBAAB\nBBBAABAABAAAABBBBAAABBAABBAB\nBBAABAAABBBAABABBAABABAAAAAB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          },
+          "C": {
+            "x": 27,
+            "y": 4
+          },
+          "D": {
+            "x": 0,
+            "y": 4
+          }
+        },
+        "data": "BAAAABABBAAAABABBABAABABBABA\nBAAAABAAABAABABBAABABABABBAA\nBBABABBBBAAABAABAAABBBAABBBB\nAABBABABBBBABABBAABBBBBAABAB\nAAABABABABBABAAAAABAABBBBBAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          },
+          "C": {
+            "x": 27,
+            "y": 4
+          },
+          "D": {
+            "x": 0,
+            "y": 4
+          }
+        },
+        "data": "BABAABBAABABAAAABBBBBABAAABA\nAAABBABABBABBBBBBAAABABABAAB\nBABBBAAABAAABBAABBBABAABABAB\nABAABBBBBAAAAABAABABBBAAAAAA\nABBAAABAABBABAABABAABBABABBA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          },
+          "C": {
+            "x": 27,
+            "y": 4
+          },
+          "D": {
+            "x": 0,
+            "y": 4
+          }
+        },
+        "data": "ABBABAABBBAAABABABBBBBABBBBA\nAABBBAABAAAABBAABBAAABAAABBA\nBABBAABBABBABBABBAAABBAAABAB\nBBBBBAABBBBAAABBBAABBABAAABB\nAABABBBABBABBBAAAAAAABABAABB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          },
+          "C": {
+            "x": 27,
+            "y": 4
+          },
+          "D": {
+            "x": 0,
+            "y": 4
+          }
+        },
+        "data": "AAAABAAABAABAABBBAAABBABAABB\nBABAAAABBABBABABBBBBAAAAAAAA\nBBBABAAAABBBBAABBAAAABBBABBB\nBBBBABBBBBBAAABBBBABBBAAABBA\nBBAABBAABBABAAAAAAAAABAAABAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          },
+          "C": {
+            "x": 27,
+            "y": 4
+          },
+          "D": {
+            "x": 0,
+            "y": 4
+          }
+        },
+        "data": "ABBAABBBBABBAAAABBABBBABABBA\nABAABABBAAAABBBAABAABBBBABAA\nBABABABBABABAAABAAABAABBBBAA\nBBBBABBAABAABBABAAAAAAABABBB\nABBBABABBAABBABABAAABABBAAAB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          },
+          "C": {
+            "x": 27,
+            "y": 4
+          },
+          "D": {
+            "x": 0,
+            "y": 4
+          }
+        },
+        "data": "BBABBABBABABBBBABAAABABBAAAB\nAAAABABABABABBAABBAABAABBBBB\nABBBABBABABABBABAABBAAABBABB\nABABABBBBABABBAAAABAAABAABAA\nAABAAABABBBAAABAAAABABBABAAB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          },
+          "C": {
+            "x": 27,
+            "y": 4
+          },
+          "D": {
+            "x": 0,
+            "y": 4
+          }
+        },
+        "data": "AAABAAABBAAAABBAAABAAABBBBBA\nBBBBABABBABAAABBBAABBAABAAAA\nBAAABBBAAAAABBBABABABABBABBB\nAAABABAABAABAABAAAABBBABAAAA\nABABBBABAAAAAABAAABBBBBAAAAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          },
+          "C": {
+            "x": 27,
+            "y": 4
+          },
+          "D": {
+            "x": 0,
+            "y": 4
+          }
+        },
+        "data": "BAAAABABAAAAABAABABBBBABBAAB\nABBBAABBBBABBBBBBABBABABBBBB\nBAABBABBBABBBBBBBAAABABABAAB\nBBBBBABBBABBAABBBBBBBABBBAAA\nBBBBAAABABABABABBBABBBABBBBA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          },
+          "C": {
+            "x": 27,
+            "y": 4
+          },
+          "D": {
+            "x": 0,
+            "y": 4
+          }
+        },
+        "data": "AABABBBAAAAAABBBAABBBBBABABA\nAABAABAAABBBABBAAAABBABBAAAB\nBBBBABAABAABBABAAAAAABABBBBA\nBBBBBBBBAABABAABBBBABABBBBBA\nBBABABBABBABABAABAAAABBBBBAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          },
+          "C": {
+            "x": 27,
+            "y": 4
+          },
+          "D": {
+            "x": 0,
+            "y": 4
+          }
+        },
+        "data": "BBAAAABAAABBBABBABABBAAAABAA\nAABBBBABBAABABBBAAABBBBBABAB\nABABAAAAABABBBABABBBBAABBBAA\nBBAABABAAABBBBBBAAAABAABBBBB\nBBABBBAAAAABBBBBAABAABBAAABA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          },
+          "C": {
+            "x": 27,
+            "y": 4
+          },
+          "D": {
+            "x": 0,
+            "y": 4
+          }
+        },
+        "data": "AABABBAABBBBBBAAAABABBBAABAB\nAAAABABABABAAABAAAABBAAABBAA\nBBABBBBBBBABAAABBBAAABBABAAB\nBABBAAAAABAAABBBBBBBBABBBBBA\nBBABBBBAAAAAABBBBBABBABABBAB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          },
+          "C": {
+            "x": 27,
+            "y": 4
+          },
+          "D": {
+            "x": 0,
+            "y": 4
+          }
+        },
+        "data": "BBBAABBABAABBABBABBBAAAAABAB\nBBBABABBBAABAAAABBAAABBBBBBB\nAAABBABAABBAABBABAAABAAAABBB\nBABAAAAAABBABBBBAABBBAAABAAA\nAAABBBBABBBBBBABBABAABBBBBAB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          },
+          "C": {
+            "x": 27,
+            "y": 4
+          },
+          "D": {
+            "x": 0,
+            "y": 4
+          }
+        },
+        "data": "ABABAAAAAABAABAAABBBBBABAAAB\nBAABBAABAAAABAAABBAABAAABABB\nBBABAABAABABABAABBABAAABBABA\nABABAAAAAABBBBAABAAABBBBAAAB\nBBABAABABBBBBBBABBABABBBBBBA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          },
+          "C": {
+            "x": 27,
+            "y": 4
+          },
+          "D": {
+            "x": 0,
+            "y": 4
+          }
+        },
+        "data": "AAAAAAAAAAAAAAAAAAAAAAAAAAAA\nAAAAAAAAAAAAAAAAAAAAAAAAAAAA\nAAAAAAAAAAAAAAAAAAAAAAAAAAAA\nAAAAAAAAAAAAAAAAAAAAAAAAAAAA\nAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      },
+      {
+        "startPoints": {
+          "A": {
+            "x": 0,
+            "y": 0
+          },
+          "B": {
+            "x": 27,
+            "y": 0
+          },
+          "C": {
+            "x": 27,
+            "y": 4
+          },
+          "D": {
+            "x": 0,
+            "y": 4
+          }
+        },
+        "data": "BBBBBBBBBBBBBBBBBBBBBBBBBBBB\nBBBBBBBBBBBBBBBBBBBBBBBBBBBB\nBBBBBBBBBBBBBBBBBBBBBBBBBBBB\nBBBBBBBBBBBBBBBBBBBBBBBBBBBB\nBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+        "validate": "TEXT",
+        "expected": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      }
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+HEADS AAAAABA
+
+START #****** START ******* LSRDLRU
+START _!!**** RUN ****XX* SSSSSSS
+START _#_____ STOP ******* SSSSSSS
+
+RUN X##**** RUN ******* RRRRSSS
+RUN X#=**** RUN ******* RRRRSSS
+RUN _##**** RUN ******* RRRRSSS
+RUN _#=**** RUN ******* RRRRSSS
+RUN ##!**** RUN ******* RRRRSSS
+RUN #=!**** RUN #~***** RRRRSSS
+RUN ~=#**** RUN *~***** RRRRSSS
+RUN ~==**** RUN *~*~**K RRRRSSS
+RUN ~#!**** RUN ******* RRRRSSS
+RUN !X_**** DOWN1 ******* SSSSSSS
+
+DOWN1 ****XX_ STOP ****___ SSSSSSS
+DOWN1 *X**XXK DOWN1 *_**___ DDDDDDS
+DOWN1 ****__* REWIND ****XX* LLLLSSS
+
+DOWN2 ****XX_ STOP ****___ SSSSSSS
+DOWN2 *X**XXK DOWN2 *_**___ DDDDDDS
+DOWN2 ****__* FORWARD ****XX* RRRRSSS
+
+REWIND __***** REWIND ******* LLLLSSS
+REWIND _~***** REWIND ******* LLLLSSS
+REWIND ~_***** REWIND ******* LLLLSSS
+REWIND ~~_**** REWIND ******* LLLLSSS
+REWIND ~~~**** REWIND ***~**K LLLLSSS
+REWIND X****** REWIND ******* LLLLSSS
+REWIND _X***** DOWN2 ******* SSSSSSS
+
+FORWARD __***** FORWARD ******* RRRRSSS
+FORWARD _~***** FORWARD ******* RRRRSSS
+FORWARD ~_***** FORWARD ******* RRRRSSS
+FORWARD ~~_**** FORWARD ******* RRRRSSS
+FORWARD ~~~**** FORWARD ***~**K RRRRSSS
+FORWARD X****** FORWARD ******* RRRRSSS
+FORWARD _X***** DOWN1 ******* SSSSSSS

@@ -1,0 +1,11 @@
+HEADS AAAA
+START **** RUN **** LSRD
+
+RUN _##* RUN **** RRRR
+RUN _#=* RUN **** RRRR
+RUN ##!* RUN **** RRRR
+RUN **_* STOP **** SSSS
+RUN #=!* RUN #~** RRRR
+RUN ~=#* RUN *~** RRRR
+RUN ~==* RUN *~*~ RRRR
+RUN ~#!* RUN **** RRRR

@@ -1,0 +1,21 @@
+HEADS AAAA
+START !*** START **** LSRD
+START _*** RUN ***M SSSS
+
+RUN _##* RUN **** RRRR
+RUN _#=* RUN **** RRRR
+RUN ##!* RUN **** RRRR
+RUN #=!* RUN #~** RRRR
+RUN ~=#* RUN *~** RRRR
+RUN ~==* RUN *~*~ RRRR
+RUN ~#!* RUN **** RRRR
+RUN **_* DOWN **** SSSS
+
+DOWN ***M STOP ***_ SSSS
+DOWN ***_ REWIND **** DDDD
+
+REWIND _*** REWIND **** LLLL
+REWIND ~_** REWIND **** LLLL
+REWIND ~~_* REWIND **** LLLL
+REWIND ~~~* REWIND ***~ LLLL
+REWIND M*** STOP _*** SSSS
