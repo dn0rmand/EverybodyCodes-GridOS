@@ -31,6 +31,11 @@ export class Engine {
     private rightBottom: TPosition = { x: 0, y: 0 }
 
     constructor(program: TProgram, input: TCase) {
+        if (input.validate === 'TEXT' && input.expected.length > 0) {
+            if (input.expected.split('').some(c => c !== input.expected[0])) {
+                throw 'expected string is not a list of on single character'
+            }
+        }
         this.input = input
         this.rules = program.rules
         this.heads = program.heads.map(h => {
@@ -159,25 +164,24 @@ export class Engine {
     }
 
     private validateTextResult() {
-        const lines: string[] = []
+        const length = this.input.expected.length
+        const ref = length === 0 ? '' : this.input.expected[0]
 
-        for (let y = this.leftTop.y; y <= this.rightBottom.y; y++) {
-            const line: string[] = []
+        let count = 0
+        let bad = 0
 
-            for (let x = this.leftTop.x; x <= this.rightBottom.x; x++) {
-                const p = this.get(x, y)
-                if (p !== ' ') {
-                    line.push(p)
-                }
+        this.grid.forEach(value => {
+            if (value === ref) {
+                count++
+            } else if (value !== ' ') {
+                bad++
             }
-            lines.push(line.join(''))
-        }
+        })
 
-        const result = lines.join('')
-
-        if (result !== this.input.expected) {
-            console.log(`Got:\n${result}\nExpected\n${this.input.expected}`)
-            throw 'Invalid result'
+        if (bad > 0) {
+            throw `Invalid result. ${bad} characters different than ${ref}`
+        } else if (count !== length) {
+            throw `Invalid result. ${count} ${ref === '  '} instead of ${length}`
         }
     }
 
