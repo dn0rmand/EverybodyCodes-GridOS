@@ -1,6 +1,9 @@
 HEADS AABB
 
-START **** RUN **** SRLS
+START A**A RUN a**a SRLS
+START A**B RUN a**b SRLS
+START B**A RUN b**a SRLS
+START B**B RUN b**b SRLS
 
 RUN AAAA RUN @**@ RRLL
 RUN AABB RUN @**@ RRLL
@@ -19,23 +22,28 @@ RUN BABB RUN _**@ RRLL
 RUN BAAB RUN _**_ RRLL
 RUN BABA RUN _**_ RRLL
 
-RUN ____ STOP **** SSSS
-RUN ___@ STOP **** SSSS
-RUN __@_ STOP **** SSSS
-RUN _@__ STOP **** SSSS
-RUN @___ STOP **** SSSS
-RUN @__@ STOP _*** SSSS
-RUN @_@@ STOP _*** SSSS
-RUN @@_@ STOP ***_ SSSS
-RUN @@@@ STOP _*** SSSS
-RUN A__A STOP _**_ SSSS
-RUN B__B STOP _**_ SSSS
-RUN B@_B STOP _**_ SSSS
-RUN A@_A STOP _**_ SSSS
-RUN B_@B STOP _**_ SSSS
-RUN A_@A STOP _**_ SSSS
-RUN @AA@ STOP *__* SSSS
-RUN @BB@ STOP *__* SSSS
-RUN _@@_ STOP **** SSSS
-RUN A@@A STOP _**_ SSSS
-RUN B@@B STOP _**_ SSSS
+RUN aAAa RUN @aa@ RRLL
+RUN aABb RUN @ab@ RRLL
+RUN aAAb RUN @aa_ RRLL
+RUN aABa RUN @ab_ RRLL
+RUN bBAa RUN @ba@ RRLL
+RUN bBBb RUN @bb@ RRLL
+RUN bBAb RUN @ba_ RRLL
+RUN bBBa RUN @bb_ RRLL
+RUN aBAa RUN _ba@ RRLL
+RUN aBBb RUN _bb@ RRLL
+RUN aBAb RUN _ba_ RRLL
+RUN aBBa RUN _bb_ RRLL
+RUN bAAa RUN _aa@ RRLL
+RUN bABb RUN _ab@ RRLL
+RUN bAAb RUN _aa_ RRLL
+RUN bABa RUN _ab_ RRLL
+
+RUN a_@a STOP __@_ SSSS
+RUN *aa* STOP *@_* SSSS
+RUN *ab* STOP *__* SSSS
+RUN bbbb STOP *@_* SSSS
+RUN *ba* STOP *__* SSSS
+RUN a__a STOP ____ SSSS
+RUN b__b STOP ____ SSSS
+RUN b@_b STOP _@*_ SSSS
