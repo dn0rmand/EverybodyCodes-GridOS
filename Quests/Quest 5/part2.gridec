@@ -1,19 +1,59 @@
-HEADS AAAAAAA
+HEADS AAA/BBB
 
-START ...**** START ******* USDLDLL
-START _..**** START *+*T*** DDDSSDL
-START +..**** PREP ******* RRRSSSD
+START        .../... START        +**/*** SDD/LLS
+START        +**/**. START        ***/**+ SSD/LSS
+START        +**/**+ TOP_RIGHT    ***/+++ RRR/DDD
 
-PREP ******* DANCE ******* SSSSDDD
+// Top / Right
 
-DANCE .@.T*** DANCE +****** RRRSRRR
-DANCE ...T*** DANCE +++B*** RRRSRRR
-DANCE .@.B*** DANCE **+**** RRRSRRR
-DANCE ...B*** DANCE +++T*** RRRSRRR
-DANCE ___**** DOWN ___L*** SSSSSSS
+TOP_RIGHT    .@*/*@* TOP_RIGHT    +**/**+ RRR/DDD
+TOP_RIGHT    .@*/*.* TOP_LEFT     +**/+++ RRR/DDD
+TOP_RIGHT    *.*/*@* BOTTOM_RIGHT +++/**+ RRR/DDD
+TOP_RIGHT    *.*/*.* BOTTOM_LEFT  +++/+++ RRR/DDD
+TOP_RIGHT    +++/*@* TOP_RIGHT    ***/**+ SSS/DDD
+TOP_RIGHT    +++/*.* TOP_LEFT     ***/+++ SSS/DDD
+TOP_RIGHT    +@+/*@* TOP_RIGHT    ***/**+ SSS/DDD
+TOP_RIGHT    +@+/*.* TOP_LEFT     ***/+++ SSS/DDD
+TOP_RIGHT    .@*/___ TOP_RIGHT    +**/*** RRR/SSS
+TOP_RIGHT    *.*/___ BOTTOM_RIGHT +++/*** RRR/SSS
+TOP_RIGHT    +++/___ STOP         ***/*** SSS/SSS
+TOP_RIGHT    +@+/___ STOP         ***/*** SSS/SSS
 
-DOWN ___L!.! DOWN ___R+++ SSSSDDD
-DOWN ___R!.! DOWN ___L+++ SSSSDDD
-DOWN ___R!@! DOWN ___R**+ SSSSDDD
-DOWN ___L!@! DOWN ___L+** SSSSDDD
-DOWN ___!___ STOP ***_*** SSSSSSS
+// Top / Left
+
+TOP_LEFT     .@*/*@* TOP_LEFT     +**/+** RRR/DDD
+TOP_LEFT     .@*/*.* TOP_RIGHT    +**/+++ RRR/DDD
+TOP_LEFT     *.*/*@* BOTTOM_LEFT  +++/+** RRR/DDD
+TOP_LEFT     *.*/*.* BOTTOM_RIGHT +++/+++ RRR/DDD
+TOP_LEFT     +++/*@* TOP_LEFT     ***/+** SSS/DDD
+TOP_LEFT     +++/*.* TOP_RIGHT    ***/+++ SSS/DDD
+TOP_LEFT     +@+/*@* TOP_LEFT     ***/+** SSS/DDD
+TOP_LEFT     +@+/*.* TOP_RIGHT    ***/+++ SSS/DDD
+TOP_LEFT     .@*/___ TOP_RIGHT    +**/*** RRR/SSS
+TOP_LEFT     *.*/___ BOTTOM_RIGHT +++/*** RRR/SSS
+TOP_LEFT     +++/___ STOP         ***/*** SSS/SSS
+TOP_LEFT     +@+/___ STOP         ***/*** SSS/SSS
+
+// Bottom / Left
+
+BOTTOM_LEFT  *@*/*@* BOTTOM_LEFT  **+/+** RRR/DDD
+BOTTOM_LEFT  *@*/*.* BOTTOM_RIGHT **+/+++ RRR/DDD
+BOTTOM_LEFT  *.*/*@* TOP_LEFT     +++/+** RRR/DDD
+BOTTOM_LEFT  *.*/*.* TOP_RIGHT    +++/+++ RRR/DDD
+BOTTOM_LEFT  +++/*@* BOTTOM_LEFT  ***/+** SSS/DDD
+BOTTOM_LEFT  +++/*.* BOTTOM_RIGHT ***/+++ SSS/DDD
+BOTTOM_LEFT  *@*/___ BOTTOM_RIGHT **+/*** RRR/SSS
+BOTTOM_LEFT  *.*/___ TOP_RIGHT    +++/*** RRR/SSS
+BOTTOM_LEFT  +++/___ STOP         ***/*** SSS/SSS
+
+// Bottom / Right
+
+BOTTOM_RIGHT *@*/*@* BOTTOM_RIGHT **+/**+ RRR/DDD
+BOTTOM_RIGHT *@*/*.* BOTTOM_LEFT  **+/+++ RRR/DDD
+BOTTOM_RIGHT *.*/*@* TOP_RIGHT    +++/**+ RRR/DDD
+BOTTOM_RIGHT *.*/*.* TOP_LEFT     +++/+++ RRR/DDD
+BOTTOM_RIGHT +++/*@* BOTTOM_RIGHT ***/**+ SSS/DDD
+BOTTOM_RIGHT +++/*.* BOTTOM_LEFT  ***/+++ SSS/DDD
+BOTTOM_RIGHT *@*/___ BOTTOM_RIGHT **+/*** RRR/SSS
+BOTTOM_RIGHT *.*/___ TOP_RIGHT    +++/*** RRR/SSS
+BOTTOM_RIGHT +++/___ STOP         ***/*** SSS/SSS

@@ -1,11 +1,28 @@
-HEADS AAAA
+HEADS AAD/BBC
 
-START ...* START **** USDL
-START _..* START *+*T DDDS
-START +..* DANCE **** RRRS
+START         .../... START         +**/+++ SDS/SDS
+START         +**/+*+ TOP_TOP       ***/+++ RRR/LLL
 
-DANCE .@.T DANCE +*** RRRS
-DANCE ...T DANCE +++B RRRS
-DANCE .@.B DANCE **+* RRRS
-DANCE ...B DANCE +++T RRRS
-DANCE ___* STOP ____ SSSS
+TOP_TOP       .@./.@. TOP_TOP       +**/+** RRR/LLL
+TOP_TOP       .@./... TOP_BOTTOM    +**/+++ RRR/LLL
+TOP_TOP       .../.@. BOTTOM_TOP    +++/+** RRR/LLL
+TOP_TOP       .../... BOTTOM_BOTTOM +++/+++ RRR/LLL
+TOP_TOP       +**/+** STOP          ***/*** SSS/SSS
+
+TOP_BOTTOM    .@./.@. TOP_BOTTOM    +**/**+ RRR/LLL
+TOP_BOTTOM    .@./... TOP_TOP       +**/+++ RRR/LLL
+TOP_BOTTOM    .../.@. BOTTOM_BOTTOM +++/**+ RRR/LLL
+TOP_BOTTOM    .../... BOTTOM_TOP    +++/+++ RRR/LLL
+TOP_BOTTOM    +**/**+ STOP          ***/*** SSS/SSS
+
+BOTTOM_TOP    .@./.@. BOTTOM_TOP    **+/+** RRR/LLL
+BOTTOM_TOP    .@./... BOTTOM_BOTTOM **+/+++ RRR/LLL
+BOTTOM_TOP    .../.@. TOP_TOP       +++/+** RRR/LLL
+BOTTOM_TOP    .../... TOP_BOTTOM    +++/+++ RRR/LLL
+BOTTOM_TOP    **+/+** STOP          ***/*** SSS/SSS
+
+BOTTOM_BOTTOM .@./.@. BOTTOM_BOTTOM **+/**+ RRR/LLL
+BOTTOM_BOTTOM .@./... BOTTOM_TOP    **+/+++ RRR/LLL
+BOTTOM_BOTTOM .../.@. TOP_BOTTOM    +++/**+ RRR/LLL
+BOTTOM_BOTTOM .../... TOP_TOP       +++/+++ RRR/LLL
+BOTTOM_BOTTOM **+/**+ STOP          ***/*** SSS/SSS

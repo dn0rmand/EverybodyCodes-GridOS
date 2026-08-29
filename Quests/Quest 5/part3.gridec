@@ -1,47 +1,56 @@
-HEADS AAAA
+HEADS AAA/CCC
 
-START ...* START **** USDL
-START _..* START *+*T DDDS
-START +..* DANCER **** RRRS
+START     .../*** START     ***/*** USD/DSU
+START     _../*** START     *+*/*** DDD/UUU
+START     +../*** RIGHT_TB  +++/+++ RRR/LLL
 
-DANCER .@.T DANCER +*** RRRS
-DANCER ...T DANCER +++B RRRS
-DANCER .@.B DANCER **+* RRRS
-DANCER ...B DANCER +++T RRRS
-DANCER ___* TURNDOWN ***L DDSS
+RIGHT_TB  .@./.@. RIGHT_TB  +**/+** RRR/LLL
+RIGHT_TT  .@./.@. RIGHT_TT  +**/**+ RRR/LLL
+RIGHT_TB  .@./... RIGHT_TT  +**/+++ RRR/LLL
+RIGHT_TT  .@./... RIGHT_TB  +**/+++ RRR/LLL
 
-TURNDOWN ___* TD1 **** LLSS
-TD1 **** TD2 **** LSSS
-TD2 **** TD3 **** DSSS
-TD3 **** DANCED **** LLLS
+RIGHT_BB  .@./.@. RIGHT_BB  **+/+** RRR/LLL
+RIGHT_BT  .@./.@. RIGHT_BT  **+/**+ RRR/LLL
+RIGHT_BB  .@./... RIGHT_BT  **+/+++ RRR/LLL
+RIGHT_BT  .@./... RIGHT_BB  **+/+++ RRR/LLL
 
-DANCED !.!L DANCED +++R DDDS
-DANCED !.!R DANCED +++L DDDS
-DANCED !@!R DANCED +*** DDDS
-DANCED !@!L DANCED **+* DDDS
-DANCED ___! TURNLEFT ***B SSSS
+RIGHT_TB  .../.@. RIGHT_BB  +++/+** RRR/LLL
+RIGHT_TT  .../.@. RIGHT_BT  +++/**+ RRR/LLL
+RIGHT_TB  .../... RIGHT_BT  +++/+++ RRR/LLL
+RIGHT_TT  .../... RIGHT_BB  +++/+++ RRR/LLL
 
-TURNLEFT **** TL1 **** UUUS
-TL1 **** TL2 **** SUUS
-TL2 **** TL3 **** SLUS
-TL3 **** TL4 **** SSLS
-TL4 **** DANCEL **** SSLS
+RIGHT_BB  .../.@. RIGHT_TB  +++/+** RRR/LLL
+RIGHT_BT  .../.@. RIGHT_TT  +++/**+ RRR/LLL
+RIGHT_BB  .../... RIGHT_TT  +++/+++ RRR/LLL
+RIGHT_BT  .../... RIGHT_TB  +++/+++ RRR/LLL
 
-DANCEL !.!B DANCEL +++T LLLS
-DANCEL !+!B DANCEL +++T LLLS
-DANCEL !.!T DANCEL +++B LLLS
-DANCEL !+!T DANCEL +++B LLLS
-DANCEL !@!B DANCEL +*** LLLS
-DANCEL !@!T DANCEL **+* LLLS
-DANCEL ___* TURNUP ***R URDS
+RIGHT_BB  ___/*** TURNDOWN  ***/*** DDL/UUR
+RIGHT_BT  ___/*** TURNDOWN  ***/*** DDL/UUR
+RIGHT_TB  ___/*** TURNDOWN  ***/*** DDL/UUR
+RIGHT_TT  ___/*** TURNDOWN  ***/*** DDL/UUR
 
-TURNUP **** TU1 **** RRRS
-TU1 **** TU2 **** SSRS
-TU2 **** DANCEU **** SSRS
+TURNDOWN  ***/*** TD1       ***/*** DLL/URR
+TD1       ***/*** DOWN_RL   ***/*** LLL/RRR
 
-DANCEU !.!L DANCEU +++R UUUS
-DANCEU !.!R DANCEU +++L UUUS
-DANCEU !@!R DANCEU +*** UUUS
-DANCEU !@!L DANCEU **+* UUUS
-DANCEU +++* DANCEU **** UUUS
-DANCEU ___! STOP ***_ SSSS
+DOWN_RL   !.!/.@. DOWN_LL   +++/+** DDD/UUU
+DOWN_RL   .@./.@. DOWN_RL   +**/+** DDD/UUU
+DOWN_RL   !.!/!.! DOWN_LR   +++/+++ DDD/UUU
+DOWN_RL   .@./!.! DOWN_RR   +**/+++ DDD/UUU
+
+DOWN_RR   !.!/.@. DOWN_LR   +++/**+ DDD/UUU
+DOWN_RR   !@!/.@. DOWN_RR   +**/**+ DDD/UUU
+DOWN_RR   !.!/!.! DOWN_LL   +++/+++ DDD/UUU
+DOWN_RR   !@!/!.! DOWN_RL   +**/+++ DDD/UUU
+
+DOWN_LL   .../.@. DOWN_RL   +++/+** DDD/UUU
+DOWN_LL   .@./.@. DOWN_LL   **+/+** DDD/UUU
+DOWN_LL   .../... DOWN_RR   +++/+++ DDD/UUU
+DOWN_LL   .@./... DOWN_LR   **+/+++ DDD/UUU
+
+DOWN_LR   .../.@. DOWN_RR   +++/**+ DDD/UUU
+DOWN_LR   .@./.@. DOWN_LR   **+/**+ DDD/UUU
+DOWN_LR   .../... DOWN_RL   +++/+++ DDD/UUU
+DOWN_LR   .@./... DOWN_LL   **+/+++ DDD/UUU
+
+DOWN_LL   +.*/*** STOP      +++/+++ SSS/SSS
+DOWN_LR   +.*/*** STOP      +++/+++ SSS/SSS
