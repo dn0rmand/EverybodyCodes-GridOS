@@ -1,21 +1,29 @@
 HEADS AAAA
-START !*** START **** LSRD
-START _*** RUN ***M SSSS
 
-RUN _##* RUN **** RRRR
-RUN _#=* RUN **** RRRR
-RUN ##!* RUN **** RRRR
-RUN #=!* RUN #~** RRRR
-RUN ~=#* RUN *~** RRRR
-RUN ~==* RUN *~*~ RRRR
-RUN ~#!* RUN **** RRRR
-RUN **_* DOWN **** SSSS
+START **** R1GHT **** LSRD
 
-DOWN ***M STOP ***_ SSSS
-DOWN ***_ REWIND **** DDDD
+R1GHT _##* R1GHT **** RRRR
+R1GHT _#=* R1GHT **** RRRR
+R1GHT ##!* R1GHT **** RRRR
+R1GHT #=!* R1GHT #~** RRRR
+R1GHT ~=#* R1GHT *~** RRRR
+R1GHT ~==* RIGHT *~*x RRRR
+R1GHT ~#!* R1GHT **** RRRR
+R1GHT **_* STOP  **** DDDD
 
-REWIND _*** REWIND **** LLLL
-REWIND ~_** REWIND **** LLLL
-REWIND ~~_* REWIND **** LLLL
-REWIND ~~~* REWIND ***~ LLLL
-REWIND M*** STOP _*** SSSS
+RIGHT _##* RIGHT **** RRRR
+RIGHT _#=* RIGHT **** RRRR
+RIGHT ##!* RIGHT **** RRRR
+RIGHT #=!* RIGHT #~** RRRR
+RIGHT ~=#* RIGHT *~** RRRR
+RIGHT ~==* RIGHT *~*~ RRRR
+RIGHT ~#!* RIGHT **** RRRR
+RIGHT **_* LEFT  **** DDDD
+
+LEFT  _*** LEFT  **** LLLL
+LEFT  ~_** LEFT  **** LLLL
+LEFT  ~~_* LEFT  **** LLLL
+LEFT  ~~~* LEFT  ***~ LLLL
+LEFT  x_** STOP  ~*** SSSS
+LEFT  x~_* STOP  ~*** SSSS
+LEFT  x~~* STOP  ~**~ SSSS

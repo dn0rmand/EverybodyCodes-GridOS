@@ -1,40 +1,53 @@
-HEADS AAAAABA
+HEADS AAAA
 
-START #****** START ******* LSRDLRU
-START _!!**** RUN ****XX* SSSSSSS
-START _#_____ STOP ******* SSSSSSS
+START **** R1GHT **** LSRD
 
-RUN X##**** RUN ******* RRRRSSS
-RUN X#=**** RUN ******* RRRRSSS
-RUN _##**** RUN ******* RRRRSSS
-RUN _#=**** RUN ******* RRRRSSS
-RUN ##!**** RUN ******* RRRRSSS
-RUN #=!**** RUN #~***** RRRRSSS
-RUN ~=#**** RUN *~***** RRRRSSS
-RUN ~==**** RUN *~*~**K RRRRSSS
-RUN ~#!**** RUN ******* RRRRSSS
-RUN !X_**** DOWN1 ******* SSSSSSS
+R1GHT _##* R1GHT **** RRRR
+R1GHT _#=* R1GHT **** RRRR
+R1GHT ##!* R1GHT **** RRRR
+R1GHT #=!* R1GHT #~** RRRR
+R1GHT ~=#* R1GHT *~** RRRR
+R1GHT ~==* RIGHT *~*x RRRR
+R1GHT ~#!* R1GHT **** RRRR
+R1GHT **_* STOP  **** DDDD
 
-DOWN1 ****XX_ STOP ****___ SSSSSSS
-DOWN1 *X**XXK DOWN1 *_**___ DDDDDDS
-DOWN1 ****__* REWIND ****XX* LLLLSSS
+RIGHT _##* RIGHT **** RRRR
+RIGHT _#=* RIGHT **** RRRR
+RIGHT ##!* RIGHT **** RRRR
+RIGHT #=!* RIGHT #~** RRRR
+RIGHT ~=#* RIGHT *~** RRRR
+RIGHT ~==* RIGHT *~*~ RRRR
+RIGHT ~#!* RIGHT **** RRRR
+RIGHT **_* L3FT  **** DDDD
 
-DOWN2 ****XX_ STOP ****___ SSSSSSS
-DOWN2 *X**XXK DOWN2 *_**___ DDDDDDS
-DOWN2 ****__* FORWARD ****XX* RRRRSSS
+L3FT  _*** L3FT  **** LLLL
+L3FT  ~_** L3FT  **** LLLL
+L3FT  ~~_* L3FT  **** LLLL
+L3FT  ~~~* LEFT  ***x LLLL
+L3FT  x_** STOP  ~*** SSSS
+L3FT  x~_* STOP  ~*** SSSS
+L3FT  x~~* STOP  ~**~ SSSS
 
-REWIND __***** REWIND ******* LLLLSSS
-REWIND _~***** REWIND ******* LLLLSSS
-REWIND ~_***** REWIND ******* LLLLSSS
-REWIND ~~_**** REWIND ******* LLLLSSS
-REWIND ~~~**** REWIND ***~**K LLLLSSS
-REWIND X****** REWIND ******* LLLLSSS
-REWIND _X***** DOWN2 ******* SSSSSSS
+LEFT  _*** LEFT  **** LLLL
+LEFT  ~_** LEFT  **** LLLL
+LEFT  ~~_* LEFT  **** LLLL
+LEFT  ~~~* LEFT  ***~ LLLL
+LEFT  x_** R2GHT ~*** DDDD
+LEFT  x~_* R2GHT ~*** DDDD
+LEFT  x~~* R2GHT ~**~ DDDD
 
-FORWARD __***** FORWARD ******* RRRRSSS
-FORWARD _~***** FORWARD ******* RRRRSSS
-FORWARD ~_***** FORWARD ******* RRRRSSS
-FORWARD ~~_**** FORWARD ******* RRRRSSS
-FORWARD ~~~**** FORWARD ***~**K RRRRSSS
-FORWARD X****** FORWARD ******* RRRRSSS
-FORWARD _X***** DOWN1 ******* SSSSSSS
+R2GHT **_* R2GHT **** RRRR
+R2GHT *_~* R2GHT **** RRRR
+R2GHT _~~* R2GHT **** RRRR
+R2GHT ~~~* R8GHT ***x RRRR
+R2GHT *_x* STOP  **~* SSSS
+R2GHT _~x* STOP  **~* SSSS
+R2GHT ~~x* STOP  **~~ SSSS
+
+R8GHT **_* R8GHT **** RRRR
+R8GHT *_~* R8GHT **** RRRR
+R8GHT _~~* R8GHT **** RRRR
+R8GHT ~~~* R8GHT ***~ RRRR
+R8GHT *_x* L3FT  **~* DDDD
+R8GHT _~x* L3FT  **~* DDDD
+R8GHT ~~x* L3FT  **~~ DDDD
