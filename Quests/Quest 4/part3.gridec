@@ -1,43 +1,59 @@
-HEADS AA
+HEADS AA/A/A
 
-START ** CONS ** SU
+START  **/*/* S1      **/*/* SU/S/U
+S1     **/*/* CONSR   *X/*/* RR/S/R
 
-CONS #_ CONS *X RR
-CONS #! CONS ** RR
-CONS =_ CONS *X RR
-CONS =! CONS ** RR
-CONS |* REW *| LL
-CONS _* RESET ** US
+// SORT
 
-RESET #X RESET ** US
-RESET XX CLEAN1 ** DS
+CONSR  #_/#/* CONSR   **/*/* RR/S/R
+CONSR  #!/#/* CONSR   **/*/* RR/S/R
+CONSR  =_/#/* CONSR   **/*/* RR/S/R
+CONSR  =!/#/* CONSR   **/*/* RR/S/R
+CONSR  |*/#/* CONSL   ||/*/* DS/D/S
 
-CLEAN1 _X CLEAN2 ** US
-CLEAN1 !X CLEAN2 ** SS
-CLEAN2 *X CLEAN2 ** RR
-CLEAN2 *| REW1 *X LL
+CONSL  =*/#/* CONSR   **/*/* RR/S/R
+CONSL  _*/#/* CONSL   **/*/* LL/S/L
+CONSL  |*/#/* CONSL   ||/*/* DS/D/S
 
-REW1 =* REW1 ** LL
-REW1 #* SHORT ** SS
+CONSR  **/_/* ENDSORT **/*/* US/U/S
+CONSL  **/_/* ENDSORT **/*/* US/U/S
 
-REW =* REW ** LL
-REW #* CONS ** DS
+// SORT DONE ---
 
-REWIND =* REWIND ** LL
-REWIND _* REWIND ** LL
-REWIND |* REWIND ** LL
-REWIND #* SHORT ** DS
+ENDSORT *_/*/* ENDSORT **/*/* LL/S/L
+ENDSORT *|/*/* ENDSORT **/*/* LL/S/L
+ENDSORT *X/*/* GOTO_1  *_/*/* RR/S/R
 
-SHORT _* TERMINATE ** SS
-SHORT #* SHORT ** RR
-SHORT =X SHORT ** RR
-SHORT |X REWIND ** SS
-SHORT =| TRUNC |* RR
-SHORT || REWIND ** SS
+GOTO_1  *_/*/* GOTO_1  **/*/* RR/S/R
+GOTO_1  *|/*/* GOTO_2  *_/*/* RR/S/R
+GOTO_2  *_/*/* GOTO_2  **/*/* RR/S/R
+GOTO_2  _|/*/* RESET   *2/*/* US/U/S
+GOTO_2  ||/*/* RESET   *2/*/* US/U/S
+GOTO_2  =|/*/* RESET   *2/+/* US/U/S
 
-TRUNC |* TRUNC _* RR
-TRUNC =* TRUNC _* RR 
-TRUNC _* REWIND ** RR
+// Prepare to Trim
 
-TERMINATE *! TERMINATE *_ RR
-TERMINATE *_ STOP ** SS
+RESET   =2/*/* RESET   **/+/* US/U/S
+RESET   |2/*/* RESET   **/*/* US/U/S
+RESET   _2/*/* RESET   **/*/* US/U/S
+RESET   22/*/* TRIM    **/*/* DS/D/S
+
+// TRIM 
+
+TRIM    *2/#/* TRIM    **/*/* DS/D/S
+TRIM    =2/+/* TRIMR   |*/*/* RR/S/S
+TRIM    _2/+/* TRIML   **/*/* LL/S/S
+TRIM    _2/_/* STOP    __/_/_ SS/S/S
+
+TRIML   *_/+/* TRIML   _*/*/* LL/S/S
+TRIML   *|/+/* TRIML   __/*/* LL/S/S
+TRIML   *2/+/* TRIM    |*/#/* DS/D/S
+
+TRIMR   =*/+/* TRIMR   __/*/* RR/S/S
+TRIMR   |*/+/* TRIMR2  __/#/* DS/D/S
+
+TRIMR2  =*/+/* TRIMR2  __/+/* RR/S/S
+TRIMR2  |*/+/* TRIML   __/+/* LL/S/S
+TRIMR2  _*/+/* TRIML   __/+/* LL/S/S
+TRIMR2  **/#/* TRIMR2  *_/#/* DS/D/S
+TRIMR2  **/_/* STOP    *_/*/_ SS/S/S

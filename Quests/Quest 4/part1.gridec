@@ -1,10 +1,18 @@
-HEADS AA
-START ## START ** SR
-START __ STOP ** SS
-START #| START ** DD
-START #= START #_ RR
-START _= START =_ RR
-START _| REWIND |_ LL
+HEADS AAA/BBB
 
-REWIND #* START ** DD
-REWIND =* REWIND ** LL
+START ###/### START ***/*** LSR/LSR
+START _#*/_#* RUN   ***/*** RRR/RRR
+
+RUN #==/#== RUN  _#=/_#= DDD/UUU
+RUN #==/#|_ RUN  _#=/_#| DDD/UUU
+RUN #==/#=| RUN  _#=/_#| DDD/UUU
+
+RUN #|_/#== RUN  _#|/_#= DDD/UUU
+RUN #|_/#|_ RUN  _#|/_#| DDD/UUU
+RUN #|_/#=| RUN  _#|/_#| DDD/UUU
+
+RUN #=|/#== RUN  _#|/_#= DDD/UUU
+RUN #=|/#|_ RUN  _#|/_#| DDD/UUU
+RUN #=|/#=| RUN  _#|/_#| DDD/UUU
+
+RUN _**/_** STOP  ***/*** SSS/SSS

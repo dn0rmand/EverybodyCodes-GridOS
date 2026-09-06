@@ -1,30 +1,35 @@
-HEADS AA
-START ** COMPARE ** SD
+HEADS AA/A/A
 
-COMPARE #_ STOP ** SS
-COMPARE _# COMPARE ** DD
-COMPARE ## COMPARE ** RR
-COMPARE == COMPARE ** RR
-COMPARE |= BOTTOM *| SR
-COMPARE =| TOP |* RS
-COMPARE || BLEFT ** SS
+START   **/*/* RIGHT    **/*/* SD/D/D
+RIGHT   **/*/* COMPARE  **/*/* RR/S/D
 
-BOTTOM |= BOTTOM ** SR
-BOTTOM || BLEFT *_ SL
+COMPARE ==/#/* COMPARE  **/*/* RR/S/S
+COMPARE |=/#/* TRIM     ||/*/* RR/S/S
+COMPARE =|/#/* TRIM     ||/*/* RR/S/S
+COMPARE **/_/* STOP     **/*/* SS/S/S
 
-TOP =| TOP ** RS
-TOP || TLEFT _* LS
+TRIM    ==/#/* TRIM     __/#/* RR/S/S
+TRIM    _=/#/* TRIM     __/#/* RR/S/S
+TRIM    =_/#/* TRIM     __/#/* RR/S/S
+TRIM    _|/#/# REWIND   __/#/* LL/S/S
+TRIM    _|/#/_ STOP     __/#/* SS/S/S
+TRIM    |_/#/* REWIND   __/#/* LL/S/S
+TRIM    ||/#/* REWIND   __/#/* LL/S/S
 
-BLEFT |= BLEFT *_ SL
-BLEFT || BLEFT ** LL
-BLEFT == BLEFT ** LL
-BLEFT ## COMPARE ** DD
+REWIND  __/#/* REWIND   **/#/* LL/S/S
+REWIND  ||/#/* DOWN     **/#/* DD/D/D
 
-TLEFT =| TLEFT _* LS
-TLEFT || TLEFT ** LL
-TLEFT == TLEFT ** LL
-TLEFT ## UP ** UU
+DOWN    **/_/* STOP     **/*/* SS/S/S
+DOWN    |_/#/* RESET    __/*/* LL/S/S
+DOWN    |=/#/* TRIM     ||/*/* RR/S/S
+DOWN    ||/#/* DOWN     **/*/* DD/D/D
 
-UP _# DOWN ** DD
-UP ## COMPARE ** SS
-DOWN ## COMPARE ** DD
+RESET   *_/#/* RESET    __/*/* LL/S/S
+RESET   *|/*/* UP       ||/*/* UU/U/U
+
+UP      =|/#/* UP       **/*/* UU/U/U
+UP      ==/#/* UP       **/*/* UU/U/U
+UP      |*/#/* TRIM     ||/*/* RR/S/S
+UP      _|/#/* UP1      **/*/* DD/D/D
+UP      _=/#/* UP1      **/*/* DD/D/D
+UP1     **/#/* TRIM     ||/*/* RR/S/S
