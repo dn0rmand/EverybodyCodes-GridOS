@@ -146,14 +146,28 @@ export class Engine {
         const maxX = Math.max(...expectedData.map(l => l.length))
         const minY = 0
         const maxY = expectedData.length
+
+        let offsetX = Number.MAX_SAFE_INTEGER
+        let offsetY = Number.MAX_SAFE_INTEGER
+        this.grid.forEach((value, key) => {
+            if (value === ' ') {
+                return
+            }
+            const { x, y } = this.positionFromKey(key)
+            offsetX = Math.min(offsetX, x)
+            offsetY = Math.min(offsetY, y)
+        })
+
         this.grid.forEach((value, key) => {
             const { x, y } = this.positionFromKey(key)
-            if (x < minX || x >= maxX || y < minY || y >= maxY) {
+            const xRef = x - offsetX
+            const yRef = y - offsetY
+            if (xRef < minX || xRef >= maxX || yRef < minY || yRef >= maxY) {
                 if (value !== ' ') {
                     throw 'Invalid result: remaining values outside the limits'
                 }
             }
-            const expected = (expectedData[y] ?? [])[x] ?? '_'
+            const expected = (expectedData[yRef] ?? [])[xRef] ?? '_'
             if (value === ' ') {
                 value = '_'
             }
