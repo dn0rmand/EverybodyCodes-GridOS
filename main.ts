@@ -17,10 +17,13 @@ function runCase(runner: Runner, c: number, trace: boolean = false): number {
 function runPart(quest: number, part: number, trace: boolean = false) {
     const runner = new Runner(quest, part)
     let steps = 0
+    const heights = []
     for (let c = 1; c <= 100; c++) {
         steps += runCase(runner, c, trace)
+        const height = runner.getHeight(c)
+        heights[height] = height
     }
-    console.log(`Part ${part} => ${steps} Steps`)
+    console.log(`Part ${part} => ${steps} Steps (MaxHeight: ${heights.filter(h => h).join(',')})`)
 }
 
 function runQuest(quest: number) {

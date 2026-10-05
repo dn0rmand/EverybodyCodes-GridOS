@@ -13,6 +13,11 @@ export class Runner {
         this.program = ProgramParser.loadProgram(`./Quests/Quest ${quest}/part${part}.gridec`, this.input.limits)
     }
 
+    getHeight(testCase: number): number {
+        const c = this.input.cases[testCase - 1]
+        return c.data.split('\n').length
+    }
+
     runCase(testCase: number): number {
         if (testCase < 1 || testCase > this.input.cases.length) {
             throw 'Invalid case number'
